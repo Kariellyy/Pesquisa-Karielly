@@ -1,0 +1,12 @@
+.venv/
+cric_cervix/
+outputs_binary/
+outputs_binary_copy.zip
+CRIC_CLASSIFICACAO_EXECUTADO.ipynb
+pipeline.log
+pipeline.pid
+execucao_notebook.*.log
+execucao_notebook.pid
+archive/notebooks/*.ipynb
+archive/logs/*.log
+__pycache__/

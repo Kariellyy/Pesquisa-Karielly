@@ -1,0 +1,28 @@
+\section{Conclusão}
+
+A avaliação primária por validação cruzada agrupada mostrou AUC ROC de
+$0{,}9709\pm0{,}0059$, aproximadamente $0{,}97\pm0{,}01$, para a ConvNeXt-Tiny na
+triagem binária de células cervicais em citologia convencional. A variação da
+sensibilidade entre 0,8253 e 0,9434 evidencia a importância de retreinar e
+avaliar o modelo em múltiplas partições por imagem. Em uma partição retida, a
+análise com TTA alcançou AUC ROC 0,9832 e permitiu explorar pontos
+operacionais, incluindo sensibilidade 0,9701 com especificidade 0,8723.
+
+A comparação local com ResNet50 indica vantagem da ConvNeXt-Tiny em
+ranqueamento, mas não em todas as métricas dependentes de limiar. A análise
+Bethesda aponta ASC-US como a principal dificuldade observada, com 81,7\% de
+acerto entre 115 células na partição retida, resultado que deve ser confirmado
+em folds e bases adicionais. A agenda futura inclui selecionar limiares por
+fold e aplicar TTA na validação cruzada, repetir baselines sob o mesmo protocolo
+agrupado, avaliar calibração com mais amostras, incorporar explicabilidade e
+realizar validação externa. Também são necessários localização automática das
+células e agregação das evidências no nível da lâmina. Até essas etapas, o
+método permanece um protótipo de pesquisa para priorização, sem finalidade
+diagnóstica.
+
+\section*{Disponibilidade de Dados e Código}
+
+A CRIC Cervix está disponível publicamente conforme descrito por
+\cite{rezende2021cric}. O código, os checkpoints e os artefatos de reprodução
+serão disponibilizados em repositório público.
+% TODO: inserir URL pública do repositório de código e artefatos.

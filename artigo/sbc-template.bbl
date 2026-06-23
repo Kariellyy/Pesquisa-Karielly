@@ -1,0 +1,87 @@
+\begin{thebibliography}{}
+
+\bibitem[Collins et~al. 2024]{collins2024tripod}
+Collins, G.~S., Moons, K. G.~M., Dhiman, P., Riley, R.~D., Beam, A.~L.,
+  Van~Calster, B., Ghassemi, M., Liu, X., Reitsma, J.~B., Van~Smeden, M.,
+  et~al. (2024).
+\newblock {TRIPOD+AI} statement: Updated guidance for reporting clinical
+  prediction models that use regression or machine learning methods.
+\newblock {\em BMJ}, 385:e078378.
+
+\bibitem[Fang et~al. 2024]{fang2024systematic}
+Fang, M., Liao, B., Lei, X., and Wu, F.-X. (2024).
+\newblock A systematic review on deep learning based methods for cervical cell
+  image analysis.
+\newblock {\em Neurocomputing}, 610:128630.
+
+\bibitem[Guo et~al. 2017]{guo2017calibration}
+Guo, C., Pleiss, G., Sun, Y., and Weinberger, K.~Q. (2017).
+\newblock On calibration of modern neural networks.
+\newblock In {\em Proceedings of the 34th International Conference on Machine
+  Learning}, volume~70, pages 1321--1330. PMLR.
+
+\bibitem[Kaur et~al. 2025]{kaur2025comparison}
+Kaur, H., Sharma, R., and Kaur, J. (2025).
+\newblock Comparison of deep transfer learning models for classification of
+  cervical cancer from pap smear images.
+\newblock {\em Scientific Reports}, 15(1):3945.
+
+\bibitem[Lima et~al. 2025]{lima2025ensemble}
+Lima, M.~V., Britto, M. H.~M., and Britto~Neto, L. (2025).
+\newblock Classificação de células cervicais cancerígenas com {CNNs} e
+  {ViTs} em ensemble para auxílio ao diagnóstico médico.
+\newblock In {\em Anais do XXV Simpósio Brasileiro de Computação Aplicada à
+  Saúde}, pages 497--508. Sociedade Brasileira de Computação.
+
+\bibitem[Liu et~al. 2022]{liu2022convnext}
+Liu, Z., Mao, H., Wu, C.-Y., Feichtenhofer, C., Darrell, T., and Xie, S.
+  (2022).
+\newblock A {ConvNet} for the 2020s.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}, pages 11966--11976.
+
+\bibitem[Mehedi et~al. 2024]{mehedi2024lightweight}
+Mehedi, M. H.~K., Khandaker, M., Ara, S., Alam, M.~A., Mridha, M.~F., and Aung,
+  Z. (2024).
+\newblock A lightweight deep learning method to identify different types of
+  cervical cancer.
+\newblock {\em Scientific Reports}, 14(1):29446.
+
+\bibitem[Plissiti et~al. 2018]{plissiti2018sipakmed}
+Plissiti, M.~E., Dimitrakopoulos, P., Sfikas, G., Nikou, C., Krikoni, O., and
+  Charchanti, A. (2018).
+\newblock {SIPaKMeD}: A new dataset for feature and image based classification
+  of normal and pathological cervical cells in pap smear images.
+\newblock In {\em 2018 25th IEEE International Conference on Image Processing},
+  pages 3144--3148.
+
+\bibitem[Rezende et~al. 2021]{rezende2021cric}
+Rezende, M.~T., Silva, R., Bernardo, F. d.~O., Tobias, A. H.~G., Oliveira, P.
+  H.~C., Machado, T.~M., Costa, C.~S., Medeiros, F. N.~S., Ushizima, D.~M.,
+  Carneiro, C.~M., and Bianchi, A. G.~C. (2021).
+\newblock {CRIC} searchable image database as a public platform for
+  conventional pap smear cytology data.
+\newblock {\em Scientific Data}, 8(1):151.
+
+\bibitem[Rodríguez et~al. 2024]{rodriguez2024automated}
+Rodríguez, M., Córdova, C., Benjumeda, I., and San~Martín, S. (2024).
+\newblock Automated cervical cancer screening using single-cell segmentation
+  and deep learning: Enhanced performance with liquid-based cytology.
+\newblock {\em Computation}, 12(12):232.
+
+\bibitem[Singh et~al. 2023]{singh2023global}
+Singh, D., Vignat, J., Lorenzoni, V., Eslahi, M., Ginsburg, O., Lauby-Secretan,
+  B., Arbyn, M., Basu, P., Bray, F., and Vaccarella, S. (2023).
+\newblock Global estimates of incidence and mortality of cervical cancer in
+  2020: A baseline analysis of the {WHO} global cervical cancer elimination
+  initiative.
+\newblock {\em The Lancet Global Health}, 11(2):e197--e206.
+
+\bibitem[Tejani et~al. 2024]{tejani2024claim}
+Tejani, A.~S., Klontzas, M.~E., Gatti, A.~A., Mongan, J.~T., Moy, L., Park, S.,
+  Kahn, C.~E., and Panel, C. .~U. (2024).
+\newblock Checklist for artificial intelligence in medical imaging ({CLAIM}):
+  2024 update.
+\newblock {\em Radiology: Artificial Intelligence}, 6(4):e240300.
+
+\end{thebibliography}

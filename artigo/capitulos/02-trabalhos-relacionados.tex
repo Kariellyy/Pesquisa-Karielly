@@ -1,0 +1,66 @@
+\section{Trabalhos Relacionados}
+
+\subsection{Bases e tarefas em citologia cervical}
+
+Herlev e SIPaKMeD são bases frequentes na classificação de células isoladas. A
+SIPaKMeD contém imagens de células extraídas de esfregaços de Papanicolau e foi
+proposta para classificação baseada em atributos e imagens
+\cite{plissiti2018sipakmed}. Embora úteis para comparação, bases de células
+isoladas não reproduzem integralmente sobreposição, inflamação, variação de
+fundo e outros fatores encontrados em exames convencionais.
+
+A CRIC Cervix foi construída a partir de 400 imagens de citologia convencional
+e contém 11.534 células classificadas por citopatologistas segundo o Sistema
+Bethesda \cite{rezende2021cric}. A coleção inclui NILM, ASC-US, LSIL, ASC-H,
+HSIL e SCC, preservando desafios de lâminas reais, como células sobrepostas e
+elementos inflamatórios. Essa característica torna a CRIC especialmente
+adequada para estudar generalização entre imagens, mas exige que a dependência
+entre células da mesma imagem seja considerada no desenho experimental.
+
+\subsection{Aprendizado profundo para classificação cervical}
+
+A Tabela~\ref{tab:comparacao-literatura} posiciona estudos recentes que usam
+redes profundas em citologia cervical
+\cite{kaur2025comparison,mehedi2024lightweight,lima2025ensemble,rodriguez2024automated}.
+A comparação é deliberadamente qualitativa: os resultados não são diretamente
+intercambiáveis porque variam base, preparação, número de classes, métrica
+principal e unidade de particionamento. Ainda assim, a tabela evidencia a
+lacuna explorada neste trabalho: avaliar triagem binária em CRIC com
+particionamento por imagem, limiares operacionais, incerteza e análise
+Bethesda.
+
+\begin{table}[ht]
+\centering
+\caption{Comparação qualitativa com estudos recentes.}
+\label{tab:comparacao-literatura}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{2.1cm}p{2.25cm}p{2.45cm}p{3.9cm}}
+\toprule
+Estudo & Base/preparação & Resultado reportado & Diferença para este trabalho \\
+\midrule
+Kaur 2025 & Herlev/SIPaKMeD; células isoladas &
+ResNet50: 95\% em Herlev binário & Comparação ampla de arquiteturas, sem foco
+em CRIC, limiares clínicos ou Bethesda \\
+Mehedi 2024 & SIPaKMeD; cinco classes &
+CCanNet: 98,53\% de acurácia & Modelo leve em base isolada; protocolo e tarefa
+distintos da citologia convencional CRIC \\
+Lima 2025 & Herlev/SIPaKMeD; \emph{ensemble} &
+98,35\% em Herlev binário; 99,73\% em SIPaKMeD binário & Forte comparação
+entre arquiteturas; não avalia CRIC nem erro por Bethesda \\
+Rodríguez 2024 & Pap convencional e meio
+líquido & Pap: sens. 0,688; espec. 0,762 & Mostra a dificuldade da citologia
+convencional; usa tarefa e dados diferentes \\
+Este artigo & CRIC; citologia convencional & CV agrupada: AUC ROC
+$0{,}9709\pm0{,}0059$ & Foco em protocolo: agrupamento por imagem, limiares,
+ICs, calibração e análise Bethesda \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Em síntese, a literatura apresenta desempenho elevado, porém frequentemente
+privilegia acurácia em bases de células isoladas. Este estudo se diferencia
+menos pela arquitetura isolada e mais pelo protocolo: citologia convencional,
+partição por imagem, validação cruzada agrupada, comparação local com ResNet50,
+limiar definido na validação, intervalos de confiança que respeitam
+agrupamentos e análise de erro preservando a nomenclatura Bethesda.

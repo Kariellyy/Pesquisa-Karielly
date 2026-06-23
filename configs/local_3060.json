@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "data_dir": "cric_cervix",
+  "output_dir": "outputs_binary",
+  "image_size": 224,
+  "batch_size": 48,
+  "num_workers": 4,
+  "epochs": 12,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "label_smoothing": 0.03,
+  "expected_gpu": "RTX 3060",
+  "sensitivity_target": 0.97,
+  "bootstrap_replicates": 2000,
+  "cv_folds": 5,
+  "cv_epochs": 12
+}

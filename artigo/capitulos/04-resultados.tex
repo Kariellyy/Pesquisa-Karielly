@@ -1,0 +1,183 @@
+﻿\section{Resultados}
+
+\subsection{Validação cruzada agrupada}
+
+A validação cruzada agrupada em cinco folds constitui o resultado primário do
+estudo. No limiar 0,50 e sem TTA, a ConvNeXt-Tiny obteve AUC ROC média de
+$0{,}9709\pm0{,}0059$ e AUC PR de $0{,}9607\pm0{,}0121$. A
+Tabela~\ref{tab:cv-media} resume as métricas agregadas. Como a média pode ocultar
+trocas operacionais entre falsos negativos e falsos positivos, a
+Figura~\ref{fig:cv-folds} separa sensibilidade e especificidade por fold. A
+função da figura é mostrar onde a validação cruzada varia: não no ranqueamento
+global, mas no ponto de decisão binária usado em triagem.
+
+\begin{table}[ht]
+\centering
+\caption{Resultado primário da validação cruzada em cinco folds agrupada por
+imagem, com limiar 0,50 e sem TTA. Valores em média $\pm$ desvio-padrão.}
+\label{tab:cv-media}
+\begin{tabular}{lr}
+\toprule
+Métrica & Resultado \\
+\midrule
+AUC ROC & $0{,}9709\pm0{,}0059$ \\
+AUC PR & $0{,}9607\pm0{,}0121$ \\
+Acurácia balanceada & $0{,}9091\pm0{,}0115$ \\
+Sensibilidade & $0{,}8994\pm0{,}0480$ \\
+Especificidade & $0{,}9188\pm0{,}0400$ \\
+\emph{F1} & $0{,}8926\pm0{,}0128$ \\
+MCC & $0{,}8189\pm0{,}0208$ \\
+Kappa & $0{,}8164\pm0{,}0223$ \\
+\emph{Brier score} & $0{,}0699\pm0{,}0079$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+ width=.72\textwidth,height=4.6cm,
+ kariellyaxis,
+ ybar,bar width=9pt,
+ symbolic x coords={1,2,3,4,5},xtick=data,
+ xlabel={Fold},ylabel={M\'etrica dependente do limiar},
+ ymin=.80,ymax=.99,
+ legend style={at={(.5,-.20)},anchor=north,legend columns=3}
+]
+\addplot[fill=black!70,draw=black!70] table[x=fold,y=sensitivity,col sep=comma]{dados/cv_folds_plot.csv};
+\addlegendentry{Sens.}
+\addplot[fill=black!20,draw=black!45] table[x=fold,y=specificity,col sep=comma]{dados/cv_folds_plot.csv};
+\addlegendentry{Espec.}
+\addplot[black,thick,mark=*,sharp plot] table[x=fold,y=balanced_acc,col sep=comma]{dados/cv_folds_plot.csv};
+\addlegendentry{Acc. bal.}
+\end{axis}
+\end{tikzpicture}
+\caption{Métricas dependentes do limiar nos cinco folds agrupados. O fold 1
+privilegia especificidade e perde sensibilidade; os folds 2 e 3 mostram o
+comportamento oposto.}
+\label{fig:cv-folds}
+\end{figure}
+
+A Figura~\ref{fig:cv-folds} justifica reportar a validação cruzada além da AUC:
+no fold 1, a sensibilidade cai para 0,8253 enquanto a especificidade chega a
+0,9681; nos folds 2 e 3, a recuperação de anormais aumenta, mas com menor
+especificidade. Portanto, a variação relevante para uso em triagem está no
+limiar operacional e na composição do fold, não apenas na capacidade de
+ranqueamento do modelo.
+
+\subsection{Análise detalhada em uma partição}
+
+Na partição retida, a inferência da ConvNeXt-Tiny com TTA produziu AUC ROC de
+0,9832 e AUC PR de 0,9827. A temperatura estimada na validação foi
+$T=1{,}210$ e o \emph{Brier score} foi 0,0473. O ECE passou de 0,0247 antes da
+transformação para 0,0130 depois dela, indicando melhora de calibração nessa
+partição. Como o escalonamento por temperatura é monotônico, ele não altera as
+AUCs; a pequena mudança de ranqueamento em relação à inferência sem TTA decorre
+do TTA.
+
+\subsection{Efeito do limiar operacional}
+
+A Figura~\ref{fig:limiares} evidencia a troca entre falsos negativos e falsos
+positivos. O limiar 0,50 apresentou o maior MCC e a maior acurácia balanceada.
+O limiar de Youden aumentou a sensibilidade com perda moderada de
+especificidade. O regime de alta sensibilidade atingiu 0,9701 de sensibilidade,
+mas reduziu a especificidade para 0,8723. Em um fluxo de triagem, esse ponto
+poderia ser aceitável caso a prioridade fosse reduzir omissões, transferindo
+mais casos para revisão humana.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+ width=.78\textwidth,height=4.55cm,
+ kariellyaxis,
+ ybar,bar width=8pt,
+ symbolic x coords={0.50,Youden,Alta sens.},xtick=data,
+ ymin=.82,ymax=.99,ylabel={M\'etrica na parti\c{c}\~ao retida},
+ legend style={at={(.5,-.18)},anchor=north,legend columns=3}
+]
+\addplot[fill=black!75,draw=black!75] coordinates {(0.50,0.9402) (Youden,0.9522) (Alta sens.,0.9701)};
+\addlegendentry{Sens.}
+\addplot[fill=black!40,draw=black!55] coordinates {(0.50,0.9440) (Youden,0.9283) (Alta sens.,0.8723)};
+\addlegendentry{Espec.}
+\addplot[fill=black!15,draw=black!45] coordinates {(0.50,0.8840) (Youden,0.8791) (Alta sens.,0.8414)};
+\addlegendentry{MCC}
+\end{axis}
+\end{tikzpicture}
+\caption{Troca operacional entre sensibilidade, especificidade e MCC para os tr\^es limiares avaliados. O regime de alta sensibilidade reduz omiss\~oes, mas amplia falsos positivos.}
+\label{fig:limiares}
+\end{figure}
+
+Os intervalos de confiança por bootstrap agrupado por imagem reforçam que a
+diferença entre 0,50 e Youden é pequena na partição retida. Para o limiar 0,50,
+a sensibilidade foi 0,9402 (IC95\% 0,8801--0,9737), a especificidade foi 0,9440
+(IC95\% 0,9087--0,9697) e o MCC foi 0,8840 (IC95\% 0,8203--0,9261). Para Youden,
+a sensibilidade foi 0,9522 (IC95\% 0,8939--0,9829), a especificidade foi 0,9283
+(IC95\% 0,8925--0,9561) e o MCC foi 0,8791 (IC95\% 0,8150--0,9218). Para o limiar
+de alta sensibilidade, a sensibilidade foi 0,9701 (IC95\% 0,9342--0,9902), a
+especificidade foi 0,8723 (IC95\% 0,8239--0,9139) e o MCC foi 0,8414 (IC95\%
+0,7766--0,8892).
+
+\subsection{Comparação com ResNet50}
+
+A comparação interna com ResNet50 foi realizada na mesma partição retida. A
+ConvNeXt-Tiny apresentou maior capacidade de ranqueamento, com AUC ROC 0,9816 e
+AUC PR 0,9805, contra 0,9710 e 0,9750 da ResNet50. A ResNet50, por outro lado,
+obteve maior especificidade, acurácia balanceada e MCC no limiar avaliado. Esse
+resultado sugere que a ConvNeXt-Tiny ordena melhor as amostras, enquanto a
+decisão binária depende fortemente do limiar escolhido.
+
+\begin{table}[ht]
+\centering
+\caption{Comparação entre ConvNeXt-Tiny e ResNet50 na partição retida.}
+\label{tab:baseline}
+\kariellytablefont
+\kariellytablecols
+\begin{tabular}{lrrrrrrr}
+\toprule
+Modelo & AUC ROC & AUC PR & Acc. bal. & Sens. & Espec. & F1 & MCC \\
+\midrule
+ConvNeXt-Tiny & \textbf{0,9816} & \textbf{0,9805} & 0,9371 & \textbf{0,9373} &
+0,9370 & 0,9331 & 0,8738 \\
+ResNet50 & 0,9710 & 0,9750 & \textbf{0,9401} & 0,9064 & \textbf{0,9738} &
+\textbf{0,9362} & \textbf{0,8852} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Representatividade e erros por categoria Bethesda}
+
+A composição da partição retida favorece categorias mais facilmente separáveis:
+HSIL corresponde a 52,7\% das células anormais no teste, ante 35,8\% no
+conjunto completo, enquanto LSIL corresponde a 16,4\%, ante 28,6\% no conjunto
+completo. Essa super-representação de HSIL e sub-representação de LSIL ajudam a
+explicar por que os resultados da partição única são superiores às médias da
+validação cruzada.
+
+No limiar de Youden, a Tabela~\ref{tab:bethesda} mostra 92,8\% de acerto para
+NILM, 81,7\% para ASC-US, 94,5\% para LSIL, 90,2\% para ASC-H, 99,4\% para HSIL
+e 100\% para SCC. O resultado de ASC-US, baseado em 115 células dessa partição,
+sugere uma dificuldade relevante, mas não sustenta sozinho uma conclusão
+populacional. SCC também possui suporte reduzido, com 42 células.
+
+\begin{table}[ht]
+\centering
+\caption{Acerto binário por categoria Bethesda na partição retida, usando o
+limiar de Youden (0,287).}
+\label{tab:bethesda}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrlr}
+\toprule
+Categoria & $n$ & Acerto (\%) & IC95\% Wilson & $P$(anormal) média \\
+\midrule
+NILM & 1143 & 92,8 & 91,2--94,2\% & 0,091 \\
+ASC-US & 115 & 81,7 & 73,7--87,7\% & 0,741 \\
+LSIL & 165 & 94,5 & 90,0--97,1\% & 0,898 \\
+ASC-H & 153 & 90,2 & 84,5--94,0\% & 0,860 \\
+HSIL & 529 & 99,4 & 98,3--99,8\% & 0,956 \\
+SCC & 42 & 100,0 & 91,6--100,0\% & 0,970 \\
+\bottomrule
+\end{tabular}
+\end{table}

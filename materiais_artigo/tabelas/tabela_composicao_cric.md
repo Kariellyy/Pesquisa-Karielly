@@ -1,0 +1,8 @@
+| Classe binária | Categoria Bethesda | Células | Proporção (%) |
+| --- | --- | --- | --- |
+| anormal | ASC-H | 925 | 8.0 |
+| anormal | ASC-US | 606 | 5.3 |
+| anormal | HSIL | 1703 | 14.8 |
+| anormal | LSIL | 1360 | 11.8 |
+| anormal | SCC | 161 | 1.4 |
+| normal | Negative for intraepithelial lesion | 6779 | 58.8 |

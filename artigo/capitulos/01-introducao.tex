@@ -1,0 +1,58 @@
+\section{Introdução}
+
+O câncer do colo do útero permanece entre as principais causas evitáveis de
+morbidade e mortalidade por câncer em mulheres. Estimativas globais para 2020
+indicam aproximadamente 604 mil novos casos e 342 mil mortes, com maior carga
+em regiões que enfrentam restrições de acesso à vacinação, ao rastreamento e ao
+tratamento oportuno \cite{singh2023global}. A citologia cervical continua sendo
+um componente relevante do rastreamento, mas a leitura manual de lâminas é
+trabalhosa, depende de especialistas e envolve alterações morfológicas que
+podem ser sutis, especialmente nas categorias limítrofes.
+
+Redes neurais profundas têm apresentado resultados promissores na análise de
+imagens citológicas. Entretanto, revisões recentes apontam que a comparação
+entre métodos é dificultada por diferenças de base de dados, preparação da
+lâmina, tarefa, granularidade dos rótulos e protocolo de validação
+\cite{fang2024systematic}. Um risco particularmente
+importante surge quando células recortadas da mesma imagem aparecem em treino
+e teste. Como elas compartilham coloração, aquisição, fundo e artefatos, uma
+divisão aleatória no nível celular pode produzir uma estimativa excessivamente
+otimista da generalização.
+
+Além da discriminação, um sistema de apoio à triagem precisa tornar explícita a
+relação entre falsos negativos e falsos positivos. Um limiar fixo de 0,5 não é
+necessariamente apropriado para um cenário em que deixar de sinalizar uma
+célula anormal pode ser mais grave do que encaminhar uma célula normal para
+revisão. Probabilidades também não devem ser interpretadas como confiança sem
+avaliação de calibração, pois redes modernas podem ser corretas na ordenação e,
+ainda assim, superconfiantes \cite{guo2017calibration}. Diretrizes como
+TRIPOD+AI reforçam a necessidade de descrever partições, seleção de limiar,
+incerteza e uso pretendido de modelos preditivos \cite{collins2024tripod}.
+
+Este artigo estuda a classificação binária \emph{normal versus anormal} de
+células da coleção CRIC Cervix, obtidas por citologia convencional. A tarefa é
+formulada como triagem: reunir ASC-US, LSIL, ASC-H, HSIL e SCC na classe
+anormal, preservando os subtipos para análise posterior. Utiliza-se
+ConvNeXt-Tiny pré-treinada, uma arquitetura convolucional modernizada que
+incorpora decisões de projeto popularizadas por transformadores visuais
+\cite{liu2022convnext}.
+
+As contribuições do estudo são quatro. Primeiro, a avaliação primária emprega
+validação cruzada em cinco folds, com agrupamento por imagem-fonte e retreino
+do modelo em cada fold. Segundo, uma partição retida complementa a estimativa
+de variância com análise de limiares operacionais, TTA, calibração e intervalos
+de confiança por bootstrap agrupado por imagem. Terceiro, a ConvNeXt-Tiny é
+comparada a uma ResNet50 treinada sob a mesma partição retida, evitando
+comparação indireta entre bases incompatíveis. Quarto, os erros são
+estratificados pelas categorias Bethesda originais, revelando onde a
+simplificação binária permanece difícil.
+
+O objetivo não é propor um diagnóstico autônomo nem comparar arquiteturas em
+bases incompatíveis. Busca-se oferecer um protocolo reprodutível e
+clinicamente orientado para avaliar até que ponto um classificador de células
+pode priorizar regiões suspeitas em imagens convencionais, bem como explicitar
+as evidências ainda necessárias antes de qualquer uso assistencial. Assim, o
+diferencial do trabalho está menos em uma nova arquitetura e mais em uma
+avaliação que combina controle de agrupamento, análise operacional de limiares,
+incerteza estatística e interpretação por subtipo Bethesda em uma base de
+citologia convencional.

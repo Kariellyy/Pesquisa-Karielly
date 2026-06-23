@@ -1,0 +1,167 @@
+{
+  "cv_resumo": [
+    {
+      "Unnamed: 0": "roc_auc",
+      "media": 0.9708988191297898,
+      "desvio_padrao": 0.0059325171378783,
+      "media_pm_dp": "0.9709 +/- 0.0059"
+    },
+    {
+      "Unnamed: 0": "pr_auc_precisao_media",
+      "media": 0.9607075972645518,
+      "desvio_padrao": 0.0121252695386075,
+      "media_pm_dp": "0.9607 +/- 0.0121"
+    },
+    {
+      "Unnamed: 0": "acuracia_balanceada",
+      "media": 0.9091431215586352,
+      "desvio_padrao": 0.0114629066016703,
+      "media_pm_dp": "0.9091 +/- 0.0115"
+    },
+    {
+      "Unnamed: 0": "sensibilidade_anormal",
+      "media": 0.8994417336041897,
+      "desvio_padrao": 0.0480278843245941,
+      "media_pm_dp": "0.8994 +/- 0.0480"
+    },
+    {
+      "Unnamed: 0": "especificidade_normal",
+      "media": 0.9188445095130804,
+      "desvio_padrao": 0.039977688546073,
+      "media_pm_dp": "0.9188 +/- 0.0400"
+    },
+    {
+      "Unnamed: 0": "f1_anormal",
+      "media": 0.8925862119658141,
+      "desvio_padrao": 0.0128318405638148,
+      "media_pm_dp": "0.8926 +/- 0.0128"
+    },
+    {
+      "Unnamed: 0": "mcc",
+      "media": 0.8189477703612619,
+      "desvio_padrao": 0.0208442214186136,
+      "media_pm_dp": "0.8189 +/- 0.0208"
+    },
+    {
+      "Unnamed: 0": "kappa_cohen",
+      "media": 0.8164344773829985,
+      "desvio_padrao": 0.0222754236289895,
+      "media_pm_dp": "0.8164 +/- 0.0223"
+    },
+    {
+      "Unnamed: 0": "brier_score",
+      "media": 0.0699230976402759,
+      "desvio_padrao": 0.0078577291518825,
+      "media_pm_dp": "0.0699 +/- 0.0079"
+    }
+  ],
+  "baseline": [
+    {
+      "Unnamed: 0": "ConvNeXt-Tiny",
+      "roc_auc": 0.9816,
+      "pr_auc_precisao_media": 0.9805,
+      "acuracia_balanceada": 0.9371,
+      "sensibilidade_anormal": 0.9373,
+      "especificidade_normal": 0.937,
+      "f1_anormal": 0.9331,
+      "mcc": 0.8738,
+      "brier_score": 0.0524
+    },
+    {
+      "Unnamed: 0": "ResNet50",
+      "roc_auc": 0.971,
+      "pr_auc_precisao_media": 0.975,
+      "acuracia_balanceada": 0.9401,
+      "sensibilidade_anormal": 0.9064,
+      "especificidade_normal": 0.9738,
+      "f1_anormal": 0.9362,
+      "mcc": 0.8852,
+      "brier_score": 0.0491
+    }
+  ],
+  "limiares": [
+    {
+      "cenario": "limiar_0.50",
+      "limiar": 0.5,
+      "sensibilidade": 0.9402,
+      "especificidade": 0.944,
+      "acuracia_bal": 0.9421,
+      "f1_anormal": 0.9384,
+      "mcc": 0.884,
+      "roc_auc": 0.9832,
+      "pr_auc": 0.9827,
+      "brier": 0.0473
+    },
+    {
+      "cenario": "youden",
+      "limiar": 0.287,
+      "sensibilidade": 0.9522,
+      "especificidade": 0.9283,
+      "acuracia_bal": 0.9402,
+      "f1_anormal": 0.9363,
+      "mcc": 0.8791,
+      "roc_auc": 0.9832,
+      "pr_auc": 0.9827,
+      "brier": 0.0473
+    },
+    {
+      "cenario": "sens>=0.97",
+      "limiar": 0.099,
+      "sensibilidade": 0.9701,
+      "especificidade": 0.8723,
+      "acuracia_bal": 0.9212,
+      "f1_anormal": 0.9171,
+      "mcc": 0.8414,
+      "roc_auc": 0.9832,
+      "pr_auc": 0.9827,
+      "brier": 0.0473
+    }
+  ],
+  "bethesda": [
+    {
+      "classe_bethesda": "Negative for intraepithelial lesion",
+      "suporte": 1143,
+      "acerto_binario_%": 92.8,
+      "p_anormal_media": 0.091
+    },
+    {
+      "classe_bethesda": "ASC-US",
+      "suporte": 115,
+      "acerto_binario_%": 81.7,
+      "p_anormal_media": 0.741
+    },
+    {
+      "classe_bethesda": "LSIL",
+      "suporte": 165,
+      "acerto_binario_%": 94.5,
+      "p_anormal_media": 0.898
+    },
+    {
+      "classe_bethesda": "ASC-H",
+      "suporte": 153,
+      "acerto_binario_%": 90.2,
+      "p_anormal_media": 0.86
+    },
+    {
+      "classe_bethesda": "HSIL",
+      "suporte": 529,
+      "acerto_binario_%": 99.4,
+      "p_anormal_media": 0.956
+    },
+    {
+      "classe_bethesda": "SCC",
+      "suporte": 42,
+      "acerto_binario_%": 100.0,
+      "p_anormal_media": 0.97
+    }
+  ],
+  "avaliacao": {
+    "tta": true,
+    "temperatura": 1.2104251384735107,
+    "limiar_youden": 0.28676527738571167,
+    "limiar_sensibilidade": 0.09855034947395325,
+    "alvo_sensibilidade": 0.97,
+    "ece_antes": 0.024689448168861303,
+    "ece_depois": 0.013003230209427228
+  }
+}

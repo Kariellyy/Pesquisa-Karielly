@@ -1,0 +1,9 @@
+{
+  "tta": true,
+  "temperatura": 1.2104251384735107,
+  "limiar_youden": 0.28676527738571167,
+  "limiar_sensibilidade": 0.09855034947395325,
+  "alvo_sensibilidade": 0.97,
+  "ece_antes": 0.024689448168861303,
+  "ece_depois": 0.013003230209427228
+}

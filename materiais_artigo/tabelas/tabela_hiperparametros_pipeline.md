@@ -1,0 +1,13 @@
+| Parâmetro | Valor |
+| --- | --- |
+| Arquitetura principal | ConvNeXt-Tiny |
+| Baseline | ResNet50 |
+| Dimensão de entrada | 224x224x3 |
+| Batch size | 48 |
+| Otimizador | AdamW |
+| Taxa de aprendizado | 0.0003 |
+| Decaimento de peso | 0.0001 |
+| Épocas | 12 |
+| Label smoothing | 0.03 |
+| TTA na partição retida | Espelho horizontal |
+| Folds da CV | 5 |
