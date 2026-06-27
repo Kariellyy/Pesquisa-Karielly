@@ -1,48 +1,46 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: sbc-template.aux
-Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: sbc.bst
-Reallocating 'name_of_file' (item size: 1) to 13 items.
 Database file #1: sbc-template.bib
-You've used 12 entries,
+You've used 14 entries,
             1935 wiz_defined-function locations,
-            547 strings with 7167 characters,
-and the built_in function-call counts, 6860 in all, are:
-= -- 639
-> -- 416
+            560 strings with 7659 characters,
+and the built_in function-call counts, 7926 in all, are:
+= -- 739
+> -- 482
 < -- 5
-+ -- 158
-- -- 152
-* -- 631
-:= -- 1161
-add.period$ -- 38
-call.type$ -- 12
-change.case$ -- 135
-chr.to.int$ -- 12
-cite$ -- 12
-duplicate$ -- 228
-empty$ -- 407
-format.name$ -- 164
-if$ -- 1345
++ -- 184
+- -- 176
+* -- 739
+:= -- 1347
+add.period$ -- 44
+call.type$ -- 14
+change.case$ -- 157
+chr.to.int$ -- 14
+cite$ -- 14
+duplicate$ -- 256
+empty$ -- 469
+format.name$ -- 190
+if$ -- 1543
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 63
-num.names$ -- 36
-pop$ -- 132
+missing$ -- 14
+newline$ -- 73
+num.names$ -- 42
+pop$ -- 150
 preamble$ -- 1
-purify$ -- 135
+purify$ -- 157
 quote$ -- 0
-skip$ -- 179
+skip$ -- 199
 stack$ -- 0
-substring$ -- 446
-swap$ -- 57
+substring$ -- 528
+swap$ -- 59
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 84
 warning$ -- 0
-while$ -- 45
+while$ -- 53
 width$ -- 0
-write$ -- 161
+write$ -- 187

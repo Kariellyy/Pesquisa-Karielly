@@ -40,7 +40,7 @@ textura, agrupamento e contexto presente nos recortes processados.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=.58\textwidth]{exemplos-celulas-normal-anormal.png}
+\includegraphics[width=.48\textwidth]{exemplos-celulas-normal-anormal.png}
 \caption{Exemplos de recortes com rótulo real normal (NILM) e anormal,
 selecionados da amostra visual gerada pelo pipeline no notebook.}
 \label{fig:exemplos-celulas}
@@ -106,8 +106,9 @@ distribuição de validação ou teste.
 
 Seguindo a prática de explicitar configuração e custo computacional em estudos
 comparativos \cite{lima2025ensemble}, a Tabela~\ref{tab:hiperparametros} resume
-os parâmetros executados. A implementação oficial possui 28,59 milhões de
-parâmetros; após substituir a cabeça de 1.000 por duas saídas, o modelo usado
+os parâmetros executados. A implementação oficial \cite{liu2022convnext} possui
+28,59 milhões de parâmetros; após substituir a cabeça de 1.000 por duas saídas,
+o modelo usado
 possui aproximadamente 27,82 milhões. O custo de referência para entrada
 $224\times224$ é 4,46 GFLOPs. O melhor checkpoint foi selecionado
 exclusivamente pela AUC ROC na validação.

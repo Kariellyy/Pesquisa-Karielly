@@ -20,6 +20,13 @@ Guo, C., Pleiss, G., Sun, Y., and Weinberger, K.~Q. (2017).
 \newblock In {\em Proceedings of the 34th International Conference on Machine
   Learning}, volume~70, pages 1321--1330. PMLR.
 
+\bibitem[Jiang et~al. 2023]{jiang2023systematic}
+Jiang, P., Li, X., Shen, H., Chen, Y., Wang, L., Chen, H., Feng, J., and Liu,
+  J. (2023).
+\newblock A systematic review of deep learning-based cervical cytology
+  screening: From cell identification to whole slide image analysis.
+\newblock {\em Artificial Intelligence Review}, 56(Suppl 2):2687--2758.
+
 \bibitem[Kaur et~al. 2025]{kaur2025comparison}
 Kaur, H., Sharma, R., and Kaur, J. (2025).
 \newblock Comparison of deep transfer learning models for classification of
@@ -83,5 +90,10 @@ Tejani, A.~S., Klontzas, M.~E., Gatti, A.~A., Mongan, J.~T., Moy, L., Park, S.,
 \newblock Checklist for artificial intelligence in medical imaging ({CLAIM}):
   2024 update.
 \newblock {\em Radiology: Artificial Intelligence}, 6(4):e240300.
+
+\bibitem[Xu et~al. 2023]{xu2023cervical}
+Xu, L., Cai, F., Fu, Y., and Liu, Q. (2023).
+\newblock Cervical cell classification with deep-learning algorithms.
+\newblock {\em Medical \& Biological Engineering \& Computing}, 61(3):821--833.
 
 \end{thebibliography}

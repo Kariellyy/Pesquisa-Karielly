@@ -5,6 +5,8 @@
 \citation{singh2023global}
 \babel@aux{brazilian}{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introdução}{1}{}\protected@file@percent }
+\citation{jiang2023systematic}
+\citation{xu2023cervical}
 \citation{fang2024systematic}
 \citation{guo2017calibration}
 \citation{collins2024tripod}
@@ -30,6 +32,7 @@
 \newlabel{fig:exemplos-celulas}{{1}{4}{Base de dados e definição do desfecho}{figure.1}{}}
 \citation{liu2022convnext}
 \citation{lima2025ensemble}
+\citation{liu2022convnext}
 \citation{guo2017calibration}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Particionamento e desenho de avaliação}{5}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Distribuição das células e imagens nas partições.}}{5}{}\protected@file@percent }
@@ -39,32 +42,32 @@
 \newlabel{tab:hiperparametros}{{4}{6}{Modelo e treinamento}{table.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Predição, limiares e calibração}{6}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Métricas e análise de incerteza}{6}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Resultados}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Validação cruzada agrupada}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Resultados}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Validação cruzada agrupada}{6}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Resultado primário da validação cruzada em cinco folds agrupada por imagem, com limiar 0,50 e sem TTA. Valores em média $\pm $ desvio-padrão.}}{7}{}\protected@file@percent }
 \newlabel{tab:cv-media}{{5}{7}{Validação cruzada agrupada}{table.5}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Métricas por fold na validação cruzada agrupada.}}{7}{}\protected@file@percent }
-\newlabel{tab:cv-folds}{{6}{7}{Validação cruzada agrupada}{table.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Métricas dependentes do limiar nos cinco folds agrupados. O fold 1 privilegia especificidade e perde sensibilidade; os folds 2 e 3 mostram o comportamento oposto.}}{7}{}\protected@file@percent }
+\newlabel{fig:cv-folds}{{2}{7}{Validação cruzada agrupada}{figure.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Análise detalhada em uma partição}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Efeito do limiar operacional}{7}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Desempenho na partição retida. O maior valor de cada métrica dependente do limiar aparece em negrito.}}{8}{}\protected@file@percent }
-\newlabel{tab:limiares}{{7}{8}{Efeito do limiar operacional}{table.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Curvas ROC e precisão--revocação da ConvNeXt-Tiny na partição retida (com TTA e temperatura). A linha tracejada indica o classificador aleatório (ROC) e a prevalência de células anormais (precisão--revocação).}}{8}{}\protected@file@percent }
+\newlabel{fig:roc-pr}{{3}{8}{Análise detalhada em uma partição}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Efeito do limiar operacional}{8}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Comparação com ResNet50}{8}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Comparação entre ConvNeXt-Tiny e ResNet50 na partição retida.}}{8}{}\protected@file@percent }
-\newlabel{tab:baseline}{{8}{8}{Comparação com ResNet50}{table.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Comparação entre ConvNeXt-Tiny e ResNet50 na partição retida.}}{8}{}\protected@file@percent }
+\newlabel{tab:baseline}{{6}{8}{Comparação com ResNet50}{table.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Representatividade e erros por categoria Bethesda}{8}{}\protected@file@percent }
 \citation{kaur2025comparison}
 \citation{mehedi2024lightweight}
 \citation{lima2025ensemble}
 \citation{rodriguez2024automated}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Acerto binário por categoria Bethesda na partição retida, usando o limiar de Youden (0,287).}}{9}{}\protected@file@percent }
-\newlabel{tab:bethesda}{{9}{9}{Representatividade e erros por categoria Bethesda}{table.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Acerto binário por categoria Bethesda na partição retida, usando o limiar de Youden (0,287).}}{9}{}\protected@file@percent }
+\newlabel{tab:bethesda}{{7}{9}{Representatividade e erros por categoria Bethesda}{table.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Discussão}{9}{}\protected@file@percent }
 \citation{collins2024tripod}
 \citation{tejani2024claim}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Recomendações para estudos comparáveis}{10}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Elementos mínimos recomendados para avaliação de triagem celular em citologia cervical convencional.}}{10}{}\protected@file@percent }
-\newlabel{tab:recomendacoes}{{10}{10}{Recomendações para estudos comparáveis}{table.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Elementos mínimos recomendados para avaliação de triagem celular em citologia cervical convencional.}}{10}{}\protected@file@percent }
+\newlabel{tab:recomendacoes}{{8}{10}{Recomendações para estudos comparáveis}{table.8}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Limitações e uso responsável}{10}{}\protected@file@percent }
 \citation{rezende2021cric}
 \citation{rezende2021cric}
@@ -74,6 +77,7 @@
 \bibcite{fang2024systematic}{Fang et~al. 2024}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Conclusão}{11}{}\protected@file@percent }
 \bibcite{guo2017calibration}{Guo et~al. 2017}
+\bibcite{jiang2023systematic}{Jiang et~al. 2023}
 \bibcite{kaur2025comparison}{Kaur et~al. 2025}
 \bibcite{lima2025ensemble}{Lima et~al. 2025}
 \bibcite{liu2022convnext}{Liu et~al. 2022}
@@ -83,4 +87,5 @@
 \bibcite{rodriguez2024automated}{Rodríguez et~al. 2024}
 \bibcite{singh2023global}{Singh et~al. 2023}
 \bibcite{tejani2024claim}{Tejani et~al. 2024}
+\bibcite{xu2023cervical}{Xu et~al. 2023}
 \gdef \@abspage@last{12}
