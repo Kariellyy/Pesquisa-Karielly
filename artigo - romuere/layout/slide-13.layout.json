@@ -1,0 +1,1235 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/0yx033",
+    "id": "0yx033",
+    "slide": 13,
+    "layoutId": "7f4e7ea7-4fb9-45bc-ad54-feebcc9d7eef",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "ee77352d-cd49-4209-9eda-327e9c3ccc92",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "7f4e7ea7-4fb9-45bc-ad54-feebcc9d7eef",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "ee77352d-cd49-4209-9eda-327e9c3ccc92",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "ee77352d-cd49-4209-9eda-327e9c3ccc92",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1kre1w7m",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F8FA",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxc3ylc7",
+      "id": "2",
+      "bbox": [
+        0,
+        0,
+        1280,
+        20
+      ],
+      "geometry": "rect",
+      "fillColor": "#102033",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ji5snelo",
+      "id": "3",
+      "bbox": [
+        0,
+        20,
+        1280,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/crmhk3q5",
+      "id": "4",
+      "bbox": [
+        56,
+        48,
+        220,
+        24
+      ],
+      "geometry": "rect",
+      "text": "MÉTODO",
+      "textPreview": "MÉTODO",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MÉTODO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MÉTODO",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#0F766E",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MÉTODO",
+              "fontSize": 13,
+              "color": "#0F766E",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1cfa9w3m",
+      "id": "5",
+      "bbox": [
+        1136,
+        44,
+        80,
+        32
+      ],
+      "geometry": "rect",
+      "text": "13",
+      "textPreview": "13",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#E4572E",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "13"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "13",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#E4572E",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "13",
+              "fontSize": 18,
+              "color": "#E4572E",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ulwval87",
+      "id": "6",
+      "bbox": [
+        56,
+        78,
+        920,
+        54
+      ],
+      "geometry": "rect",
+      "text": "As partições respeitam a imagem original",
+      "textPreview": "As partições respeitam a imagem original",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "fontSize": 32,
+        "typeface": "+mn-lt",
+        "color": "#102033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "As partições respeitam a imagem original"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "As partições respeitam a imagem original",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "color": "#102033",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "As partições respeitam a imagem original",
+              "fontSize": 32,
+              "color": "#102033",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j6tovaho",
+      "id": "7",
+      "bbox": [
+        56,
+        138,
+        980,
+        46
+      ],
+      "geometry": "rect",
+      "text": "Nenhuma imagem-fonte contribuiu com células para mais de uma partição.",
+      "textPreview": "Nenhuma imagem-fonte contribuiu com células para mais de uma partição.",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "color": "#5E6875",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Nenhuma imagem-fonte contribuiu com células para mais de uma partição."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Nenhuma imagem-fonte contribuiu com células para mais de uma partição.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#5E6875",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Nenhuma imagem-fonte contribuiu com células para mais de uma partição.",
+              "fontSize": 19,
+              "color": "#5E6875",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nqxs72x",
+      "id": "8",
+      "bbox": [
+        56,
+        642,
+        1168,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6DAE0",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18jqh0fe",
+      "id": "9",
+      "bbox": [
+        56,
+        654,
+        620,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+      "textPreview": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#5E6875",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Triagem binária de células cervicais | ConvNeXt-Tiny"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#5E6875",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+              "fontSize": 11,
+              "color": "#5E6875",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/yxobm58z",
+      "id": "10",
+      "bbox": [
+        70,
+        220,
+        1140,
+        260
+      ],
+      "text": "Partição | Imagens | Normal | Anormal | Total\nTreino | 280 | 4.698 | 2.835 | 7.533\nValidação | 60 | 938 | 916 | 1.854\nTeste | 60 | 1.143 | 1.004 | 2.147",
+      "textPreview": "Partição | Imagens | Normal | Anormal | Total | Treino | 280 | 4.698 | 2.835 | 7.533 | Validação | 60 | 938 | 916 | 1.854 | Teste | 60 | ...",
+      "rows": 4,
+      "cols": 5,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            70,
+            220,
+            228,
+            65
+          ],
+          "text": "Partição",
+          "textPreview": "Partição",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Partição",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Partição",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            298,
+            220,
+            228,
+            65
+          ],
+          "text": "Imagens",
+          "textPreview": "Imagens",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Imagens",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Imagens",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            526,
+            220,
+            228,
+            65
+          ],
+          "text": "Normal",
+          "textPreview": "Normal",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Normal",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Normal",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            754,
+            220,
+            228,
+            65
+          ],
+          "text": "Anormal",
+          "textPreview": "Anormal",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Anormal",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Anormal",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 1,
+          "column": 5,
+          "bbox": [
+            982,
+            220,
+            228,
+            65
+          ],
+          "text": "Total",
+          "textPreview": "Total",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Total",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Total",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            70,
+            285,
+            228,
+            65
+          ],
+          "text": "Treino",
+          "textPreview": "Treino",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Treino",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Treino",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            298,
+            285,
+            228,
+            65
+          ],
+          "text": "280",
+          "textPreview": "280",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "280",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "280",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            526,
+            285,
+            228,
+            65
+          ],
+          "text": "4.698",
+          "textPreview": "4.698",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "4.698",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "4.698",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            754,
+            285,
+            228,
+            65
+          ],
+          "text": "2.835",
+          "textPreview": "2.835",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "2.835",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "2.835",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 2,
+          "column": 5,
+          "bbox": [
+            982,
+            285,
+            228,
+            65
+          ],
+          "text": "7.533",
+          "textPreview": "7.533",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "7.533",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "7.533",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            70,
+            350,
+            228,
+            65
+          ],
+          "text": "Validação",
+          "textPreview": "Validação",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Validação",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Validação",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            298,
+            350,
+            228,
+            65
+          ],
+          "text": "60",
+          "textPreview": "60",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "60",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "60",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            526,
+            350,
+            228,
+            65
+          ],
+          "text": "938",
+          "textPreview": "938",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "938",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "938",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            754,
+            350,
+            228,
+            65
+          ],
+          "text": "916",
+          "textPreview": "916",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "916",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "916",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 3,
+          "column": 5,
+          "bbox": [
+            982,
+            350,
+            228,
+            65
+          ],
+          "text": "1.854",
+          "textPreview": "1.854",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1.854",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1.854",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            70,
+            415,
+            228,
+            65
+          ],
+          "text": "Teste",
+          "textPreview": "Teste",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Teste",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Teste",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            298,
+            415,
+            228,
+            65
+          ],
+          "text": "60",
+          "textPreview": "60",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "60",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "60",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            526,
+            415,
+            228,
+            65
+          ],
+          "text": "1.143",
+          "textPreview": "1.143",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1.143",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1.143",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 4,
+          "column": 4,
+          "bbox": [
+            754,
+            415,
+            228,
+            65
+          ],
+          "text": "1.004",
+          "textPreview": "1.004",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1.004",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1.004",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 4,
+          "column": 5,
+          "bbox": [
+            982,
+            415,
+            228,
+            65
+          ],
+          "text": "2.147",
+          "textPreview": "2.147",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "2.147",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "2.147",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mp0bi9",
+      "id": "11",
+      "bbox": [
+        738,
+        535,
+        430,
+        76
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF1EB",
+      "lineColor": "#E4572E",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7mp0bi9s",
+      "id": "12",
+      "bbox": [
+        758,
+        550,
+        90,
+        18
+      ],
+      "geometry": "rect",
+      "text": "LEITURA",
+      "textPreview": "LEITURA",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#E4572E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LEITURA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LEITURA",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#E4572E",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "LEITURA",
+              "fontSize": 11,
+              "color": "#E4572E",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1w7mp0b",
+      "id": "13",
+      "bbox": [
+        758,
+        570,
+        386,
+        34
+      ],
+      "geometry": "rect",
+      "text": "O teste contém 2.147 células: 1.143 normais e 1.004 anormais.",
+      "textPreview": "O teste contém 2.147 células: 1.143 normais e 1.004 anormais.",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#102033",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "O teste contém 2.147 células: 1.143 normais e"
+          },
+          {
+            "index": 2,
+            "text": "1.004 anormais."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "O teste contém 2.147 células: 1.143 normais e 1.004 anormais.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#102033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O teste contém 2.147 células: 1.143 normais e 1.004 anormais.",
+              "fontSize": 16,
+              "color": "#102033",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

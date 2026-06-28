@@ -1,0 +1,1357 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/6sayq3",
+    "id": "6sayq3",
+    "slide": 20,
+    "layoutId": "7f4e7ea7-4fb9-45bc-ad54-feebcc9d7eef",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "ee77352d-cd49-4209-9eda-327e9c3ccc92",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "7f4e7ea7-4fb9-45bc-ad54-feebcc9d7eef",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "ee77352d-cd49-4209-9eda-327e9c3ccc92",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "ee77352d-cd49-4209-9eda-327e9c3ccc92",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orytsvu",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F8FA",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u18jqh0f",
+      "id": "2",
+      "bbox": [
+        0,
+        0,
+        1280,
+        20
+      ],
+      "geometry": "rect",
+      "fillColor": "#102033",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jm1cfa9w",
+      "id": "3",
+      "bbox": [
+        0,
+        20,
+        1280,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#0F766E",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfa9w3m9",
+      "id": "4",
+      "bbox": [
+        56,
+        48,
+        220,
+        24
+      ],
+      "geometry": "rect",
+      "text": "RESULTADOS",
+      "textPreview": "RESULTADOS",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#0F766E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RESULTADOS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RESULTADOS",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#0F766E",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RESULTADOS",
+              "fontSize": 13,
+              "color": "#0F766E",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1032lszq",
+      "id": "5",
+      "bbox": [
+        1136,
+        44,
+        80,
+        32
+      ],
+      "geometry": "rect",
+      "text": "20",
+      "textPreview": "20",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#E4572E",
+        "bold": true,
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "20"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "20",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#E4572E",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "20",
+              "fontSize": 18,
+              "color": "#E4572E",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u9knih4b",
+      "id": "6",
+      "bbox": [
+        56,
+        78,
+        920,
+        54
+      ],
+      "geometry": "rect",
+      "text": "ConvNeXt-Tiny ranqueou melhor que ResNet50",
+      "textPreview": "ConvNeXt-Tiny ranqueou melhor que ResNet50",
+      "resolvedFontSize": 32,
+      "resolvedTextStyle": {
+        "fontSize": 32,
+        "typeface": "+mn-lt",
+        "color": "#102033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ConvNeXt-Tiny ranqueou melhor que ResNet50"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ConvNeXt-Tiny ranqueou melhor que ResNet50",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "color": "#102033",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ConvNeXt-Tiny ranqueou melhor que ResNet50",
+              "fontSize": 32,
+              "color": "#102033",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/judg7ads",
+      "id": "7",
+      "bbox": [
+        56,
+        138,
+        980,
+        46
+      ],
+      "geometry": "rect",
+      "text": "A comparação na partição retida foi exploratória e não deve ser lida como vitória absoluta.",
+      "textPreview": "A comparação na partição retida foi exploratória e não deve ser lida como vitória absoluta.",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "fontSize": 19,
+        "typeface": "+mn-lt",
+        "color": "#5E6875",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A comparação na partição retida foi exploratória e não deve ser lida como vitória absoluta."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A comparação na partição retida foi exploratória e não deve ser lida como vitória absoluta.",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "color": "#5E6875",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A comparação na partição retida foi exploratória e não deve ser lida como vitória absoluta.",
+              "fontSize": 19,
+              "color": "#5E6875",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6tovah",
+      "id": "8",
+      "bbox": [
+        56,
+        642,
+        1168,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#D6DAE0",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54zidony",
+      "id": "9",
+      "bbox": [
+        56,
+        654,
+        620,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+      "textPreview": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#5E6875",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Triagem binária de células cervicais | ConvNeXt-Tiny"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#5E6875",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Triagem binária de células cervicais | ConvNeXt-Tiny",
+              "fontSize": 11,
+              "color": "#5E6875",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/itgfmlkj",
+      "id": "10",
+      "bbox": [
+        70,
+        230,
+        1140,
+        210
+      ],
+      "text": "Modelo | AUC ROC | AUC PR | Acc. bal. | Sens. | Espec. | MCC\nConvNeXt-Tiny | 0,9816 | 0,9805 | 0,9371 | 0,9373 | 0,9370 | 0,8738\nResNet50 | 0,9710 | 0,9750 | 0,9401 | 0,9064 | 0,9738 | 0,8852",
+      "textPreview": "Modelo | AUC ROC | AUC PR | Acc. bal. | Sens. | Espec. | MCC | ConvNeXt-Tiny | 0,9816 | 0,9805 | 0,9371 | 0,9373 | 0,9370 | 0,8738 | ResN...",
+      "rows": 3,
+      "cols": 7,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            70,
+            230,
+            162.86,
+            70
+          ],
+          "text": "Modelo",
+          "textPreview": "Modelo",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Modelo",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Modelo",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            232.86,
+            230,
+            162.86,
+            70
+          ],
+          "text": "AUC ROC",
+          "textPreview": "AUC ROC",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AUC ROC",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AUC ROC",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            395.71,
+            230,
+            162.86,
+            70
+          ],
+          "text": "AUC PR",
+          "textPreview": "AUC PR",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "AUC PR",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "AUC PR",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            558.57,
+            230,
+            162.86,
+            70
+          ],
+          "text": "Acc. bal.",
+          "textPreview": "Acc. bal.",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Acc. bal.",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Acc. bal.",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 1,
+          "column": 5,
+          "bbox": [
+            721.43,
+            230,
+            162.86,
+            70
+          ],
+          "text": "Sens.",
+          "textPreview": "Sens.",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Sens.",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Sens.",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 1,
+          "column": 6,
+          "bbox": [
+            884.29,
+            230,
+            162.86,
+            70
+          ],
+          "text": "Espec.",
+          "textPreview": "Espec.",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Espec.",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Espec.",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 1,
+          "column": 7,
+          "bbox": [
+            1047.14,
+            230,
+            162.86,
+            70
+          ],
+          "text": "MCC",
+          "textPreview": "MCC",
+          "fillColor": "#102033",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "MCC",
+              "resolvedTextStyle": {
+                "fontSize": 16,
+                "color": "#FFFFFF",
+                "bold": true
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "MCC",
+                  "fontSize": 16,
+                  "color": "#FFFFFF",
+                  "bold": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            70,
+            300,
+            162.86,
+            70
+          ],
+          "text": "ConvNeXt-Tiny",
+          "textPreview": "ConvNeXt-Tiny",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ConvNeXt-Tiny",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ConvNeXt-Tiny",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            232.86,
+            300,
+            162.86,
+            70
+          ],
+          "text": "0,9816",
+          "textPreview": "0,9816",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9816",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9816",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            395.71,
+            300,
+            162.86,
+            70
+          ],
+          "text": "0,9805",
+          "textPreview": "0,9805",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9805",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9805",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            558.57,
+            300,
+            162.86,
+            70
+          ],
+          "text": "0,9371",
+          "textPreview": "0,9371",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9371",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9371",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 2,
+          "column": 5,
+          "bbox": [
+            721.43,
+            300,
+            162.86,
+            70
+          ],
+          "text": "0,9373",
+          "textPreview": "0,9373",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9373",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9373",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 2,
+          "column": 6,
+          "bbox": [
+            884.29,
+            300,
+            162.86,
+            70
+          ],
+          "text": "0,9370",
+          "textPreview": "0,9370",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9370",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9370",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 2,
+          "column": 7,
+          "bbox": [
+            1047.14,
+            300,
+            162.86,
+            70
+          ],
+          "text": "0,8738",
+          "textPreview": "0,8738",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,8738",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,8738",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            70,
+            370,
+            162.86,
+            70
+          ],
+          "text": "ResNet50",
+          "textPreview": "ResNet50",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "ResNet50",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "ResNet50",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            232.86,
+            370,
+            162.86,
+            70
+          ],
+          "text": "0,9710",
+          "textPreview": "0,9710",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9710",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9710",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            395.71,
+            370,
+            162.86,
+            70
+          ],
+          "text": "0,9750",
+          "textPreview": "0,9750",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9750",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9750",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            558.57,
+            370,
+            162.86,
+            70
+          ],
+          "text": "0,9401",
+          "textPreview": "0,9401",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9401",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9401",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 3,
+          "column": 5,
+          "bbox": [
+            721.43,
+            370,
+            162.86,
+            70
+          ],
+          "text": "0,9064",
+          "textPreview": "0,9064",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9064",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9064",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 3,
+          "column": 6,
+          "bbox": [
+            884.29,
+            370,
+            162.86,
+            70
+          ],
+          "text": "0,9738",
+          "textPreview": "0,9738",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,9738",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,9738",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "row": 3,
+          "column": 7,
+          "bbox": [
+            1047.14,
+            370,
+            162.86,
+            70
+          ],
+          "text": "0,8852",
+          "textPreview": "0,8852",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0,8852",
+              "resolvedTextStyle": {
+                "fontSize": 17,
+                "color": "#102033"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0,8852",
+                  "fontSize": 17,
+                  "color": "#102033"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0je9cvix",
+      "id": "11",
+      "bbox": [
+        738,
+        535,
+        430,
+        76
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFF1EB",
+      "lineColor": "#E4572E",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byhgn29g",
+      "id": "12",
+      "bbox": [
+        758,
+        550,
+        90,
+        18
+      ],
+      "geometry": "rect",
+      "text": "LEITURA",
+      "textPreview": "LEITURA",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#E4572E",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LEITURA"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LEITURA",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#E4572E",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "LEITURA",
+              "fontSize": 11,
+              "color": "#E4572E",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/idonyd0z",
+      "id": "13",
+      "bbox": [
+        758,
+        570,
+        386,
+        34
+      ],
+      "geometry": "rect",
+      "text": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+      "textPreview": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#102033",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A ResNet50 foi competitiva e teve maior"
+          },
+          {
+            "index": 2,
+            "text": "especificidade, acurácia balanceada e MCC no"
+          },
+          {
+            "index": 3,
+            "text": "limiar avaliado."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#102033",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+              "fontSize": 16,
+              "color": "#102033",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcj6tova",
+      "id": "14",
+      "bbox": [
+        156,
+        500,
+        860,
+        70
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF1EB",
+      "lineColor": "#E4572E",
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0rqd4vmt",
+      "id": "15",
+      "bbox": [
+        184,
+        518,
+        806,
+        34
+      ],
+      "geometry": "rect",
+      "text": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+      "textPreview": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "fontSize": 18,
+        "typeface": "+mn-lt",
+        "color": "#102033",
+        "alignment": "center",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar"
+          },
+          {
+            "index": 2,
+            "text": "avaliado."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "color": "#102033",
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.",
+              "fontSize": 18,
+              "color": "#102033",
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

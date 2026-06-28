@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{arrows.meta,positioning}
+\pgfplotsset{
+  compat=1.18,
+  kariellyaxis/.style={
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    grid=major,
+    grid style={black!10},
+    axis line style={black!65},
+    major tick style={black!65},
+    legend style={font=\scriptsize,draw=none}
+  }
+}
+\usepgfplotslibrary{groupplots}
+
+\newcommand{\kariellytablefont}{\small}
+\newcommand{\kariellycompacttablefont}{\footnotesize}
+\newcommand{\kariellytablecols}{\setlength{\tabcolsep}{4pt}}
+
+\graphicspath{{figuras/}}
+\urlstyle{same}
+\sloppy
+
+\title{Triagem Binária de Células Cervicais em Esfregaços Convencionais
+com ConvNeXt-Tiny e Particionamento por Imagem}
+
+\author{Karielly de Carvalho\inst{1}}
+
+\address{
+  Universidade Federal do Piauí (UFPI)\\
+  \email{karielly.carvalho@ufpi.edu.br}
+}
+
+\begin{document}
+
+\maketitle
+
+% \begin{abstract}
+% This work investigates binary triage of cervical cells in conventional Pap
+% smears using ConvNeXt-Tiny and the CRIC Cervix collection. In the primary
+% evaluation, five-fold cross-validation grouped by source image yielded ROC AUC
+% $0.9709\pm0.0059$ and PR AUC $0.9607\pm0.0121$, with balanced accuracy
+% $0.9091\pm0.0115$ at threshold 0.50 and without test-time augmentation. A
+% ResNet50 baseline trained on the retained partition reached ROC AUC 0.9710,
+% while ConvNeXt-Tiny reached 0.9816 under the same split. In this retained
+% partition, test-time augmentation and temperature scaling supported operational
+% threshold analysis: the high-sensitivity threshold reached 0.9701 sensitivity
+% and 0.8723 specificity, whereas the Youden threshold reached 0.9522 sensitivity
+% and 0.9283 specificity. Subtype analysis at the Youden threshold identified
+% ASC-US as the main difficulty, with 81.7\% correct binary decisions among 115
+% cells. Because CRIC provides no patient identifiers, grouping by image does not
+% guarantee patient-level separation. The method is therefore a research
+% prototype for prioritization, not a diagnostic system.
+% \end{abstract}
+
+\begin{resumo}
+Este trabalho avalia a triagem binária de células cervicais em esfregaços
+convencionais de Papanicolau usando ConvNeXt-Tiny na coleção CRIC Cervix. Para
+reduzir vazamento entre recortes visualmente correlatos, a avaliação principal
+usa validação cruzada em cinco folds agrupada por imagem-fonte. O protocolo
+obteve AUC ROC de $0{,}9709\pm0{,}0059$ e AUC PR de $0{,}9607\pm0{,}0121$. Na
+partição retida, a análise de limiares evidenciou a troca entre falsos
+negativos e falsos positivos, com sensibilidade de 0,9701 e especificidade de
+0,8723 no regime de alta sensibilidade. A análise Bethesda indicou ASC-US como
+principal dificuldade. O método é um protótipo de pesquisa para priorização,
+não um sistema diagnóstico.
+\end{resumo}
+
+\input{capitulos/01-introducao}
+\input{capitulos/02-trabalhos-relacionados}
+\input{capitulos/03-metodologia}
+\input{capitulos/04-resultados}
+% \input{capitulos/05-discussao}
+\input{capitulos/07-conclusao}
+
+\begingroup
+\footnotesize
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+\endgroup
+
+\end{document}

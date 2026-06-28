@@ -1,0 +1,494 @@
+{"kind":"deck","id":"pr/tdrl73","name":"Deck"}
+{"kind":"layout","layoutId":"ee77352d-cd49-4209-9eda-327e9c3ccc92","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"7f4e7ea7-4fb9-45bc-ad54-feebcc9d7eef","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/epihm2","slide":1,"title":"ConvNeXt-Tiny em esfregaços convencionais com particionamento por imagem","textShapes":5}
+{"kind":"shape","id":"sh/ra5gbq1o","slide":1,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/gvy90je9","slide":1,"bbox":[0,0,1280,34]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":1,"bbox":[0,34,1280,8]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":1,"bbox":[64,100,86,8]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":1,"text":"ConvNeXt-Tiny em esfregaços convencionais com particionamento por imagem","textPreview":"ConvNeXt-Tiny em esfregaços convencionais com particionamento por imagem","textChars":72,"textLines":1,"bbox":[64,134,720,38]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":1,"text":"Triagem binária de células cervicais","textPreview":"Triagem binária de células cervicais","textChars":36,"textLines":1,"bbox":[64,190,760,130]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":1,"text":"Um estudo de apoio à priorização de células suspeitas em citologia cervical convencional.","textPreview":"Um estudo de apoio à priorização de células suspeitas em citologia cervical convencional.","textChars":89,"textLines":1,"bbox":[64,348,680,74]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":1,"text":"Karielly de Carvalho | UFPI | 15 a 20 minutos","textPreview":"Karielly de Carvalho | UFPI | 15 a 20 minutos","textChars":45,"textLines":1,"bbox":[64,548,650,34]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":1,"bbox":[870,118,296,420]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":1,"bbox":[912,160,96,96]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":1,"bbox":[944,192,32,32]}
+{"kind":"shape","id":"sh/1orytsvu","slide":1,"bbox":[990,208,124,124]}
+{"kind":"shape","id":"sh/c7u54zid","slide":1,"bbox":[1031.33,249.33,41.33,41.33]}
+{"kind":"shape","id":"sh/judg7ads","slide":1,"bbox":[886,298,144,144]}
+{"kind":"shape","id":"sh/u9knih4b","slide":1,"bbox":[934,346,48,48]}
+{"kind":"shape","id":"sh/1032lszq","slide":1,"bbox":[1026,376,88,88]}
+{"kind":"shape","id":"sh/cfa9w3m9","slide":1,"bbox":[1055.33,405.33,29.33,29.33]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":1,"text":"CRIC Cervix\n+\nConvNeXt-Tiny","textPreview":"CRIC Cervix | + | ConvNeXt-Tiny","textChars":27,"textLines":3,"bbox":[900,560,240,56]}
+{"kind":"notes","id":"nt/epihm2","slide":1,"text":"Apresente o tema como uma solução de apoio à triagem. Deixe claro desde o início que o método não é diagnóstico automático."}
+{"kind":"slide","id":"sl/7v8xy2","slide":2,"title":"PROBLEMA","textShapes":13}
+{"kind":"shape","id":"sh/0je9cvix","slide":2,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/byhgn29g","slide":2,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/idonyd0z","slide":2,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":2,"text":"PROBLEMA","textPreview":"PROBLEMA","textChars":8,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":2,"text":"O problema é relevante em escala global","textPreview":"O problema é relevante em escala global","textChars":39,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":2,"text":"O câncer do colo do útero segue entre as principais causas evitáveis de morbidade e mortalidade.","textPreview":"O câncer do colo do útero segue entre as principais causas evitáveis de morbidade e mortalidade.","textChars":96,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/tovahoza","slide":2,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/032lszqt","slide":2,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/61032lsz","slide":2,"bbox":[86,230,326,132]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":2,"text":"604 mil","textPreview":"604 mil","textChars":7,"textLines":1,"bbox":[112,254,270,46]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":2,"text":"novos casos globais em 2020","textPreview":"novos casos globais em 2020","textChars":27,"textLines":1,"bbox":[112,308,266,36]}
+{"kind":"shape","id":"sh/dsji5sne","slide":2,"bbox":[456,230,326,132]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":2,"text":"342 mil","textPreview":"342 mil","textChars":7,"textLines":1,"bbox":[482,254,270,46]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":2,"text":"mortes globais em 2020","textPreview":"mortes globais em 2020","textChars":22,"textLines":1,"bbox":[482,308,266,36]}
+{"kind":"shape","id":"sh/oj2t83it","slide":2,"bbox":[826,230,326,132]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":2,"text":"maior carga","textPreview":"maior carga","textChars":11,"textLines":1,"bbox":[852,254,270,46]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":2,"text":"em regiões com restrição de acesso","textPreview":"em regiões com restrição de acesso","textChars":34,"textLines":1,"bbox":[852,308,266,36]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":2,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":2,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":2,"text":"Apoiar o rastreamento pode ajudar a priorizar revisão onde recursos humanos são limitados.","textPreview":"Apoiar o rastreamento pode ajudar a priorizar revisão onde recursos humanos são limitados.","textChars":90,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/7v8xy2","slide":2,"text":"Use os números globais do artigo para abrir a motivação. Relacione acesso, rastreamento e necessidade de suporte."}
+{"kind":"slide","id":"sl/2oawug","slide":3,"title":"PROBLEMA","textShapes":14}
+{"kind":"shape","id":"sh/neloj2t8","slide":3,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/czed8v6p","slide":3,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/5kb6xkf6","slide":3,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/u54zidon","slide":3,"text":"PROBLEMA","textPreview":"PROBLEMA","textChars":8,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/cbulwval","slide":3,"text":"A citologia ainda é peça importante do rastreamento","textPreview":"A citologia ainda é peça importante do rastreamento","textChars":51,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":3,"text":"A leitura de lâminas permite identificar alterações morfológicas celulares que podem indicar risco.","textPreview":"A leitura de lâminas permite identificar alterações morfológicas celulares que podem indicar risco.","textChars":99,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/y90je9cv","slide":3,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":3,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":3,"bbox":[92,298,190,104]}
+{"kind":"textbox","id":"sh/eloj2t83","slide":3,"text":"Coleta","textPreview":"Coleta","textChars":6,"textLines":1,"bbox":[106,334,162,34]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":3,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[290,330,38,44]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":3,"bbox":[312,298,190,104]}
+{"kind":"textbox","id":"sh/7u54zido","slide":3,"text":"Lâmina","textPreview":"Lâmina","textChars":6,"textLines":1,"bbox":[326,334,162,34]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":3,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[510,330,38,44]}
+{"kind":"shape","id":"sh/l0rqd4vm","slide":3,"bbox":[532,298,190,104]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":3,"text":"Leitura","textPreview":"Leitura","textChars":7,"textLines":1,"bbox":[546,334,162,34]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":3,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[730,330,38,44]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":3,"bbox":[752,298,190,104]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":3,"text":"Priorização","textPreview":"Priorização","textChars":11,"textLines":1,"bbox":[766,334,162,34]}
+{"kind":"shape","id":"sh/fil0rqd4","slide":3,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/83itgfml","slide":3,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":3,"text":"O trabalho atua no apoio à leitura, não na substituição do fluxo clínico.","textPreview":"O trabalho atua no apoio à leitura, não na substituição do fluxo clínico.","textChars":73,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/2oawug","slide":3,"text":"Explique o papel da citologia cervical e conecte a pipeline computacional ao processo de rastreamento."}
+{"kind":"slide","id":"sl/zz9k8o","slide":4,"title":"PROBLEMA","textShapes":9}
+{"kind":"shape","id":"sh/90je9cvi","slide":4,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/yd0z6103","slide":4,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":4,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":4,"text":"PROBLEMA","textPreview":"PROBLEMA","textChars":8,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":4,"text":"A leitura manual é trabalhosa e depende de especialistas","textPreview":"A leitura manual é trabalhosa e depende de especialistas","textChars":56,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":4,"text":"O desafio cresce quando as alterações são sutis, especialmente nas categorias limítrofes.","textPreview":"O desafio cresce quando as alterações são sutis, especialmente nas categorias limítrofes.","textChars":89,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":4,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":4,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":4,"bbox":[112,236,490,282]}
+{"kind":"shape","id":"sh/cvixczed","slide":4,"bbox":[112,236,8,282]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":4,"text":"Na prática","textPreview":"Na prática","textChars":10,"textLines":1,"bbox":[146,266,400,36]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":4,"text":"A revisão de lâminas exige atenção, experiência e tempo. Em cenários com grande volume, casos sutis podem exigir priorização.","textPreview":"A revisão de lâminas exige atenção, experiência e tempo. Em cenários com grande volume, casos sutis podem exigir priorização.","textChars":125,"textLines":1,"bbox":[146,324,412,136]}
+{"kind":"shape","id":"sh/54zidony","slide":4,"bbox":[678,236,490,282]}
+{"kind":"shape","id":"sh/cj6tovah","slide":4,"bbox":[678,236,8,282]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":4,"text":"No artigo","textPreview":"No artigo","textChars":9,"textLines":1,"bbox":[712,266,400,36]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":4,"text":"A proposta é estimar P(anormal) para apoiar a triagem e encaminhar células suspeitas para revisão humana.","textPreview":"A proposta é estimar P(anormal) para apoiar a triagem e encaminhar células suspeitas para revisão humana.","textChars":105,"textLines":1,"bbox":[712,324,412,136]}
+{"kind":"notes","id":"nt/zz9k8o","slide":4,"text":"Reforce a ideia de apoio computacional. A frase-chave é: priorizar revisão, não substituir especialista."}
+{"kind":"slide","id":"sl/9gypav","slide":5,"title":"PROBLEMA","textShapes":13}
+{"kind":"shape","id":"sh/0je9cvix","slide":5,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/byhgn29g","slide":5,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/idonyd0z","slide":5,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":5,"text":"PROBLEMA","textPreview":"PROBLEMA","textChars":8,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":5,"text":"Imagens convencionais são visualmente heterogêneas","textPreview":"Imagens convencionais são visualmente heterogêneas","textChars":50,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":5,"text":"A CRIC Cervix preserva desafios de lâminas reais, como fundo, coloração, textura, sobreposição e inflamação.","textPreview":"A CRIC Cervix preserva desafios de lâminas reais, como fundo, coloração, textura, sobreposição e inflamação.","textChars":108,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/tovahoza","slide":5,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/032lszqt","slide":5,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/61032lsz","slide":5,"bbox":[120,230,286,94]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":5,"text":"Coloração","textPreview":"Coloração","textChars":9,"textLines":1,"bbox":[142,260,242,34]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":5,"bbox":[458,230,286,94]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":5,"text":"Textura","textPreview":"Textura","textChars":7,"textLines":1,"bbox":[480,260,242,34]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":5,"bbox":[796,230,286,94]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":5,"text":"Fundo","textPreview":"Fundo","textChars":5,"textLines":1,"bbox":[818,260,242,34]}
+{"kind":"shape","id":"sh/oj2t83it","slide":5,"bbox":[120,366,286,94]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":5,"text":"Artefatos","textPreview":"Artefatos","textChars":9,"textLines":1,"bbox":[142,396,242,34]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":5,"bbox":[458,366,286,94]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":5,"text":"Sobreposição","textPreview":"Sobreposição","textChars":12,"textLines":1,"bbox":[480,396,242,34]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":5,"bbox":[796,366,286,94]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":5,"text":"Inflamação","textPreview":"Inflamação","textChars":10,"textLines":1,"bbox":[818,396,242,34]}
+{"kind":"shape","id":"sh/90je9cvi","slide":5,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":5,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":5,"text":"Por isso, o protocolo precisa avaliar generalização com cuidado.","textPreview":"Por isso, o protocolo precisa avaliar generalização com cuidado.","textChars":64,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/9gypav","slide":5,"text":"Explique que a dificuldade não está só na rede neural: está também na natureza das imagens convencionais."}
+{"kind":"slide","id":"sl/eslf0w","slide":6,"title":"VALIDAÇÃO","textShapes":13}
+{"kind":"shape","id":"sh/rytsvu9k","slide":6,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":6,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/90je9cvi","slide":6,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":6,"text":"VALIDAÇÃO","textPreview":"VALIDAÇÃO","textChars":9,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":6,"text":"O risco de vazamento está na imagem-fonte","textPreview":"O risco de vazamento está na imagem-fonte","textChars":41,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":6,"text":"Recortes da mesma imagem compartilham aquisição, coloração, fundo e artefatos.","textPreview":"Recortes da mesma imagem compartilham aquisição, coloração, fundo e artefatos.","textChars":78,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/yxobm58z","slide":6,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":6,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/72x4nap4","slide":6,"bbox":[104,235,350,220]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":6,"text":"Treino","textPreview":"Treino","textChars":6,"textLines":1,"bbox":[132,266,160,34]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":6,"text":"Imagem A\nrecortes correlatos","textPreview":"Imagem A | recortes correlatos","textChars":28,"textLines":2,"bbox":[132,326,270,74]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":6,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[502,300,70,70]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":6,"bbox":[626,235,350,220]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":6,"text":"Teste","textPreview":"Teste","textChars":5,"textLines":1,"bbox":[654,266,160,34]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":6,"text":"Imagem A\nnão deve reaparecer","textPreview":"Imagem A | não deve reaparecer","textChars":28,"textLines":2,"bbox":[654,326,270,74]}
+{"kind":"shape","id":"sh/0z61032l","slide":6,"bbox":[1000,250,160,184]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":6,"text":"controle\npor grupo","textPreview":"controle | por grupo","textChars":18,"textLines":2,"bbox":[1018,306,124,56]}
+{"kind":"shape","id":"sh/i5sneloj","slide":6,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":6,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":6,"text":"Se células da mesma imagem aparecem em treino e teste, a estimativa pode ficar otimista.","textPreview":"Se células da mesma imagem aparecem em treino e teste, a estimativa pode ficar otimista.","textChars":88,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/eslf0w","slide":6,"text":"Este é um ponto metodológico central. Mostre que separar por célula não basta quando os recortes são visualmente correlatos."}
+{"kind":"slide","id":"sl/58it6b","slide":7,"title":"OBJETIVO","textShapes":10}
+{"kind":"shape","id":"sh/qxs72x4n","slide":7,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/xobm58z2","slide":7,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/83itgfml","slide":7,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":7,"text":"OBJETIVO","textPreview":"OBJETIVO","textChars":8,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":7,"text":"Objetivo: classificar normal versus anormal","textPreview":"Objetivo: classificar normal versus anormal","textChars":43,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":7,"text":"A tarefa foi formulada como triagem binária de células da CRIC Cervix.","textPreview":"A tarefa foi formulada como triagem binária de células da CRIC Cervix.","textChars":70,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":7,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":7,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":7,"bbox":[116,226,850,174]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":7,"text":"Avaliar se a ConvNeXt-Tiny consegue priorizar células suspeitas em esfregaços convencionais usando separação por imagem-fonte.","textPreview":"Avaliar se a ConvNeXt-Tiny consegue priorizar células suspeitas em esfregaços convencionais usando separação por imagem-fonte.","textChars":126,"textLines":1,"bbox":[152,266,770,92]}
+{"kind":"shape","id":"sh/y90je9cv","slide":7,"bbox":[128,456,205,56]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":7,"text":"CRIC Cervix","textPreview":"CRIC Cervix","textChars":11,"textLines":1,"bbox":[140,474,181,24]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":7,"bbox":[373,456,205,56]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":7,"text":"ConvNeXt-Tiny","textPreview":"ConvNeXt-Tiny","textChars":13,"textLines":1,"bbox":[385,474,181,24]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":7,"bbox":[618,456,205,56]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":7,"text":"P(anormal)","textPreview":"P(anormal)","textChars":10,"textLines":1,"bbox":[630,474,181,24]}
+{"kind":"shape","id":"sh/czed8v6p","slide":7,"bbox":[863,456,205,56]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":7,"text":"limiar operacional","textPreview":"limiar operacional","textChars":18,"textLines":1,"bbox":[875,474,181,24]}
+{"kind":"notes","id":"nt/58it6b","slide":7,"text":"Deixe claro que o modelo retorna uma probabilidade de anormalidade. A decisão final depende do limiar."}
+{"kind":"slide","id":"sl/3udlax","slide":8,"title":"OBJETIVO","textShapes":13}
+{"kind":"shape","id":"sh/dsji5sne","slide":8,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/61032lsz","slide":8,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":8,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":8,"text":"OBJETIVO","textPreview":"OBJETIVO","textChars":8,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":8,"text":"O estudo contribui em quatro frentes","textPreview":"O estudo contribui em quatro frentes","textChars":36,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":8,"text":"O foco não é apenas uma arquitetura, mas o protocolo de avaliação e interpretação.","textPreview":"O foco não é apenas uma arquitetura, mas o protocolo de avaliação e interpretação.","textChars":82,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/onyd0z61","slide":8,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":8,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/twra5gbq","slide":8,"bbox":[100,228,500,118]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":8,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[128,258,100,42]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":8,"text":"Avaliar ConvNeXt-Tiny na CRIC Cervix com separação por imagem-fonte.","textPreview":"Avaliar ConvNeXt-Tiny na CRIC Cervix com separação por imagem-fonte.","textChars":68,"textLines":1,"bbox":[216,250,340,72]}
+{"kind":"shape","id":"sh/m58z25kb","slide":8,"bbox":[648,228,500,118]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":8,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[676,258,100,42]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":8,"text":"Analisar limiares operacionais de triagem.","textPreview":"Analisar limiares operacionais de triagem.","textChars":42,"textLines":1,"bbox":[764,250,340,72]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":8,"bbox":[100,386,500,118]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":8,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[128,416,100,42]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":8,"text":"Comparar exploratoriamente com ResNet50 na partição retida.","textPreview":"Comparar exploratoriamente com ResNet50 na partição retida.","textChars":59,"textLines":1,"bbox":[216,408,340,72]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":8,"bbox":[648,386,500,118]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":8,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[676,416,100,42]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":8,"text":"Interpretar erros por categorias Bethesda.","textPreview":"Interpretar erros por categorias Bethesda.","textChars":42,"textLines":1,"bbox":[764,408,340,72]}
+{"kind":"notes","id":"nt/3udlax","slide":8,"text":"Apresente as contribuições como uma resposta às lacunas: validação, operação e interpretação."}
+{"kind":"slide","id":"sl/1bvcev","slide":9,"title":"DADOS","textShapes":15}
+{"kind":"shape","id":"sh/jqh0fepk","slide":9,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/8bat47y1","slide":9,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":9,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":9,"text":"DADOS","textPreview":"DADOS","textChars":5,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":9,"text":"A base CRIC Cervix sustenta a avaliação","textPreview":"A base CRIC Cervix sustenta a avaliação","textChars":39,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":9,"text":"O conjunto usado contém imagens convencionais e anotações celulares por citopatologistas.","textPreview":"O conjunto usado contém imagens convencionais e anotações celulares por citopatologistas.","textChars":89,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/ulwval87","slide":9,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":9,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/j2t83itg","slide":9,"bbox":[86,230,326,132]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":9,"text":"400","textPreview":"400","textChars":3,"textLines":1,"bbox":[112,254,270,46]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":9,"text":"imagens de citologia convencional","textPreview":"imagens de citologia convencional","textChars":33,"textLines":1,"bbox":[112,308,266,36]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":9,"bbox":[456,230,326,132]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":9,"text":"11.534","textPreview":"11.534","textChars":6,"textLines":1,"bbox":[482,254,270,46]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":9,"text":"anotações celulares","textPreview":"anotações celulares","textChars":19,"textLines":1,"bbox":[482,308,266,36]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":9,"bbox":[826,230,326,132]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":9,"text":"6.779","textPreview":"6.779","textChars":5,"textLines":1,"bbox":[852,254,270,46]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":9,"text":"células normais","textPreview":"células normais","textChars":15,"textLines":1,"bbox":[852,308,266,36]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":9,"bbox":[86,396,326,132]}
+{"kind":"textbox","id":"sh/2t83itgf","slide":9,"text":"4.755","textPreview":"4.755","textChars":5,"textLines":1,"bbox":[112,420,270,46]}
+{"kind":"textbox","id":"sh/re1w7mp0","slide":9,"text":"células anormais","textPreview":"células anormais","textChars":16,"textLines":1,"bbox":[112,474,266,36]}
+{"kind":"shape","id":"sh/kzupwb2h","slide":9,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/9knih4by","slide":9,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/25kb6xkf","slide":9,"text":"Como não há identificadores de paciente, a imagem-fonte é o maior nível de agrupamento disponível.","textPreview":"Como não há identificadores de paciente, a imagem-fonte é o maior nível de agrupamento disponível.","textChars":98,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/1bvcev","slide":9,"text":"Explique que o agrupamento por imagem é uma solução metodológica pragmática, mas não substitui separação por paciente."}
+{"kind":"slide","id":"sl/fecqli","slide":10,"title":"DADOS","textShapes":7}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":10,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":10,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":10,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":10,"text":"DADOS","textPreview":"DADOS","textChars":5,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":10,"text":"As categorias Bethesda foram preservadas","textPreview":"As categorias Bethesda foram preservadas","textChars":40,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":10,"text":"O treinamento é binário, mas os subtipos anormais são usados para analisar erros.","textPreview":"O treinamento é binário, mas os subtipos anormais são usados para analisar erros.","textChars":81,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/lkjm1cfa","slide":10,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":10,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":10,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":10,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":10,"text":"HSIL é a categoria anormal mais numerosa no conjunto completo.","textPreview":"HSIL é a categoria anormal mais numerosa no conjunto completo.","textChars":62,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"chart","id":"ch/2x4nap4r","slide":10,"name":"","chartType":"bar","bbox":[100,215,780,344]}
+{"kind":"notes","id":"nt/fecqli","slide":10,"text":"Diga que Bethesda entra como linguagem de interpretação. O modelo não é multiclasse neste artigo."}
+{"kind":"slide","id":"sl/1v1mtp","slide":11,"title":"DADOS","textShapes":13}
+{"kind":"shape","id":"sh/h4byhgn2","slide":11,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/adsji5sn","slide":11,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/3ylc7u54","slide":11,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":11,"text":"DADOS","textPreview":"DADOS","textChars":5,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":11,"text":"A simplificação binária organiza a triagem","textPreview":"A simplificação binária organiza a triagem","textChars":42,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":11,"text":"NILM forma a classe normal; ASC-US, LSIL, ASC-H, HSIL e SCC formam a classe anormal.","textPreview":"NILM forma a classe normal; ASC-US, LSIL, ASC-H, HSIL e SCC formam a classe anormal.","textChars":84,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/s36hcrmh","slide":11,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":11,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/58z25kb6","slide":11,"bbox":[118,232,460,230]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":11,"text":"Normal","textPreview":"Normal","textChars":6,"textLines":1,"bbox":[152,266,360,40]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":11,"text":"NILM","textPreview":"NILM","textChars":4,"textLines":1,"bbox":[152,332,380,42]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":11,"text":"6.779 células","textPreview":"6.779 células","textChars":13,"textLines":1,"bbox":[152,392,360,32]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":11,"bbox":[692,232,460,230]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":11,"text":"Anormal","textPreview":"Anormal","textChars":7,"textLines":1,"bbox":[726,266,360,40]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":11,"text":"ASC-US + LSIL + ASC-H + HSIL + SCC","textPreview":"ASC-US + LSIL + ASC-H + HSIL + SCC","textChars":34,"textLines":1,"bbox":[726,332,380,42]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":11,"text":"4.755 células","textPreview":"4.755 células","textChars":13,"textLines":1,"bbox":[726,392,360,32]}
+{"kind":"shape","id":"sh/5sneloj2","slide":11,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/cbulwval","slide":11,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":11,"text":"Essa definição é um primeiro estágio de priorização, não a classificação Bethesda completa.","textPreview":"Essa definição é um primeiro estágio de priorização, não a classificação Bethesda completa.","textChars":91,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/1v1mtp","slide":11,"text":"Enfatize a diferença entre detectar anormalidade e classificar subtipo."}
+{"kind":"slide","id":"sl/b3anc3","slide":12,"title":"MÉTODO","textShapes":20}
+{"kind":"shape","id":"sh/s36hcrmh","slide":12,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/zidonyd0","slide":12,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":12,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":12,"text":"MÉTODO","textPreview":"MÉTODO","textChars":6,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/svu9knih","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":12,"text":"A pipeline transforma recortes em decisão operacional","textPreview":"A pipeline transforma recortes em decisão operacional","textChars":53,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/ap4r65wj","slide":12,"text":"O fluxo vai da imagem convencional até a decisão normal/anormal por limiar.","textPreview":"O fluxo vai da imagem convencional até a decisão normal/anormal por limiar.","textChars":75,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":12,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/sji5snel","slide":12,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":12,"bbox":[62,310,128,88]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":12,"text":"Imagem CRIC","textPreview":"Imagem CRIC","textChars":11,"textLines":1,"bbox":[70,336,112,36]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":12,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[194,336,28,34]}
+{"kind":"shape","id":"sh/18jqh0fe","slide":12,"bbox":[222,310,148,88]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":12,"text":"Recorte 224 x 224","textPreview":"Recorte 224 x 224","textChars":17,"textLines":1,"bbox":[230,336,132,36]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":12,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[374,336,28,34]}
+{"kind":"shape","id":"sh/8bat47y1","slide":12,"bbox":[402,310,176,88]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":12,"text":"Normalização + aug. treino","textPreview":"Normalização + aug. treino","textChars":26,"textLines":1,"bbox":[410,336,160,36]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":12,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[582,336,28,34]}
+{"kind":"shape","id":"sh/ji5snelo","slide":12,"bbox":[610,310,148,88]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":12,"text":"ConvNeXt-Tiny","textPreview":"ConvNeXt-Tiny","textChars":13,"textLines":1,"bbox":[618,336,132,36]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":12,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[762,336,28,34]}
+{"kind":"shape","id":"sh/tgfmlkjm","slide":12,"bbox":[790,310,126,88]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":12,"text":"P(anormal)","textPreview":"P(anormal)","textChars":10,"textLines":1,"bbox":[798,336,110,36]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":12,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[920,336,28,34]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":12,"bbox":[948,310,128,88]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":12,"text":"Limiar","textPreview":"Limiar","textChars":6,"textLines":1,"bbox":[956,336,112,36]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":12,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[1080,336,28,34]}
+{"kind":"shape","id":"sh/bq1oryts","slide":12,"bbox":[1108,310,150,88]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":12,"text":"Normal/Anormal","textPreview":"Normal/Anormal","textChars":14,"textLines":1,"bbox":[1116,336,134,36]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":12,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":12,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":12,"text":"Os aumentos de dados são aplicados durante o treinamento.","textPreview":"Os aumentos de dados são aplicados durante o treinamento.","textChars":57,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/b3anc3","slide":12,"text":"Percorra cada bloco rapidamente. Destaque que validação e teste não recebem os aumentos de treino."}
+{"kind":"slide","id":"sl/0yx033","slide":13,"title":"MÉTODO","textShapes":7}
+{"kind":"shape","id":"sh/1kre1w7m","slide":13,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/uxc3ylc7","slide":13,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/ji5snelo","slide":13,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":13,"text":"MÉTODO","textPreview":"MÉTODO","textChars":6,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/ulwval87","slide":13,"text":"As partições respeitam a imagem original","textPreview":"As partições respeitam a imagem original","textChars":40,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":13,"text":"Nenhuma imagem-fonte contribuiu com células para mais de uma partição.","textPreview":"Nenhuma imagem-fonte contribuiu com células para mais de uma partição.","textChars":70,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":13,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":13,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/w7mp0bi9","slide":13,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":13,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":13,"text":"O teste contém 2.147 células: 1.143 normais e 1.004 anormais.","textPreview":"O teste contém 2.147 células: 1.143 normais e 1.004 anormais.","textChars":61,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"table","id":"tb/yxobm58z","slide":13,"name":"","rows":4,"cols":5,"preview":"Partição | Imagens | Normal | Anormal | Total","bbox":[70,220,1140,260]}
+{"kind":"notes","id":"nt/0yx033","slide":13,"text":"Use este slide para mostrar que o desenho experimental foi controlado por imagem-fonte."}
+{"kind":"slide","id":"sl/8rns8k","slide":14,"title":"MÉTODO","textShapes":16}
+{"kind":"shape","id":"sh/u18jqh0f","slide":14,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/1orytsvu","slide":14,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/c7u54zid","slide":14,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/judg7ads","slide":14,"text":"MÉTODO","textPreview":"MÉTODO","textChars":6,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/1032lszq","slide":14,"text":"A validação cruzada agrupada é o resultado primário","textPreview":"A validação cruzada agrupada é o resultado primário","textChars":51,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":14,"text":"O modelo foi retreinado em cinco folds usando a imagem-fonte como grupo.","textPreview":"O modelo foi retreinado em cinco folds usando a imagem-fonte como grupo.","textChars":72,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/nyd0z610","slide":14,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/udg7adsj","slide":14,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/czed8v6p","slide":14,"bbox":[92,298,190,104]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":14,"text":"5 folds","textPreview":"5 folds","textChars":7,"textLines":1,"bbox":[106,334,162,34]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":14,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[290,330,38,44]}
+{"kind":"shape","id":"sh/neloj2t8","slide":14,"bbox":[312,298,190,104]}
+{"kind":"textbox","id":"sh/cbulwval","slide":14,"text":"Grupo: imagem","textPreview":"Grupo: imagem","textChars":13,"textLines":1,"bbox":[326,334,162,34]}
+{"kind":"textbox","id":"sh/5sneloj2","slide":14,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[510,330,38,44]}
+{"kind":"shape","id":"sh/u54zidon","slide":14,"bbox":[532,298,190,104]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":14,"text":"Limiar 0,50","textPreview":"Limiar 0,50","textChars":11,"textLines":1,"bbox":[546,334,162,34]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":14,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[730,330,38,44]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":14,"bbox":[752,298,190,104]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":14,"text":"Sem TTA","textPreview":"Sem TTA","textChars":7,"textLines":1,"bbox":[766,334,162,34]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":14,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[950,330,38,44]}
+{"kind":"shape","id":"sh/byhgn29g","slide":14,"bbox":[972,298,190,104]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":14,"text":"Retreino","textPreview":"Retreino","textChars":8,"textLines":1,"bbox":[986,334,162,34]}
+{"kind":"shape","id":"sh/tcj6tova","slide":14,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":14,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":14,"text":"Essa etapa mede robustez além da partição única.","textPreview":"Essa etapa mede robustez além da partição única.","textChars":48,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/8rns8k","slide":14,"text":"Explique que a avaliação primária é a validação cruzada agrupada, não apenas a partição retida."}
+{"kind":"slide","id":"sl/z5tfd7","slide":15,"title":"MODELO","textShapes":16}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":15,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":15,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/61032lsz","slide":15,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":15,"text":"MODELO","textPreview":"MODELO","textChars":6,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":15,"text":"ConvNeXt-Tiny foi adaptada para duas saídas","textPreview":"ConvNeXt-Tiny foi adaptada para duas saídas","textChars":43,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":15,"text":"A rede usa pré-treinamento na ImageNet e uma cabeça linear para normal/anormal.","textPreview":"A rede usa pré-treinamento na ImageNet e uma cabeça linear para normal/anormal.","textChars":79,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/d8v6psfi","slide":15,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":15,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/epkzupwb","slide":15,"bbox":[100,220,430,260]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":15,"text":"ConvNeXt-Tiny","textPreview":"ConvNeXt-Tiny","textChars":13,"textLines":1,"bbox":[136,264,350,48]}
+{"kind":"textbox","id":"sh/wval87ed","slide":15,"text":"Imagem 224 x 224  →  duas saídas","textPreview":"Imagem 224 x 224  →  duas saídas","textChars":32,"textLines":1,"bbox":[136,342,330,34]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":15,"text":"Normal / Anormal","textPreview":"Normal / Anormal","textChars":16,"textLines":1,"bbox":[136,390,330,34]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":15,"bbox":[590,220,240,106]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":15,"text":"ImageNet","textPreview":"ImageNet","textChars":8,"textLines":1,"bbox":[610,240,200,34]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":15,"text":"pré-treinamento","textPreview":"pré-treinamento","textChars":15,"textLines":1,"bbox":[610,282,200,26]}
+{"kind":"shape","id":"sh/psfil0rq","slide":15,"bbox":[870,220,240,106]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":15,"text":"2 saídas","textPreview":"2 saídas","textChars":8,"textLines":1,"bbox":[890,240,200,34]}
+{"kind":"textbox","id":"sh/7u54zido","slide":15,"text":"cabeça linear","textPreview":"cabeça linear","textChars":13,"textLines":1,"bbox":[890,282,200,26]}
+{"kind":"shape","id":"sh/vy90je9c","slide":15,"bbox":[590,358,240,106]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":15,"text":"27,82 M","textPreview":"27,82 M","textChars":7,"textLines":1,"bbox":[610,378,200,34]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":15,"text":"parâmetros","textPreview":"parâmetros","textChars":10,"textLines":1,"bbox":[610,420,200,26]}
+{"kind":"shape","id":"sh/oj2t83it","slide":15,"bbox":[870,358,240,106]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":15,"text":"4,46 GFLOPs","textPreview":"4,46 GFLOPs","textChars":11,"textLines":1,"bbox":[890,378,200,34]}
+{"kind":"textbox","id":"sh/61032lsz","slide":15,"text":"entrada 224 x 224","textPreview":"entrada 224 x 224","textChars":17,"textLines":1,"bbox":[890,420,200,26]}
+{"kind":"notes","id":"nt/z5tfd7","slide":15,"text":"Apresente a arquitetura de forma objetiva. A ResNet50 aparece depois como comparação exploratória."}
+{"kind":"slide","id":"sl/045ibf","slide":16,"title":"MODELO","textShapes":13}
+{"kind":"shape","id":"sh/8jqh0fep","slide":16,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/fyxobm58","slide":16,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":16,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":16,"text":"MODELO","textPreview":"MODELO","textChars":6,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":16,"text":"O treinamento foi curto e explicitamente configurado","textPreview":"O treinamento foi curto e explicitamente configurado","textChars":52,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":16,"text":"A configuração local priorizou reprodutibilidade e seleção por AUC ROC de validação.","textPreview":"A configuração local priorizou reprodutibilidade e seleção por AUC ROC de validação.","textChars":84,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/1gvy90je","slide":16,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":16,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/a9w3m94f","slide":16,"bbox":[100,228,500,118]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":16,"text":"AdamW","textPreview":"AdamW","textChars":5,"textLines":1,"bbox":[128,258,100,42]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":16,"text":"Taxa inicial 3e-4 e decaimento 1e-4.","textPreview":"Taxa inicial 3e-4 e decaimento 1e-4.","textChars":36,"textLines":1,"bbox":[216,250,340,72]}
+{"kind":"shape","id":"sh/h0fepkzu","slide":16,"bbox":[648,228,500,118]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":16,"text":"Entrada","textPreview":"Entrada","textChars":7,"textLines":1,"bbox":[676,258,100,42]}
+{"kind":"textbox","id":"sh/z61032ls","slide":16,"text":"Recortes RGB de 224 x 224 x 3.","textPreview":"Recortes RGB de 224 x 224 x 3.","textChars":30,"textLines":1,"bbox":[764,250,340,72]}
+{"kind":"shape","id":"sh/orytsvu9","slide":16,"bbox":[100,386,500,118]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":16,"text":"Treino","textPreview":"Treino","textChars":6,"textLines":1,"bbox":[128,416,100,42]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":16,"text":"Lote 48, máximo de 12 épocas e aumentos leves.","textPreview":"Lote 48, máximo de 12 épocas e aumentos leves.","textChars":46,"textLines":1,"bbox":[216,408,340,72]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":16,"bbox":[648,386,500,118]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":16,"text":"Seleção","textPreview":"Seleção","textChars":7,"textLines":1,"bbox":[676,416,100,42]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":16,"text":"Melhor checkpoint por AUC ROC na validação.","textPreview":"Melhor checkpoint por AUC ROC na validação.","textChars":43,"textLines":1,"bbox":[764,408,340,72]}
+{"kind":"notes","id":"nt/045ibf","slide":16,"text":"Mantenha este slide breve. A amostragem ponderada equilibra exposição no treino sem alterar validação/teste."}
+{"kind":"slide","id":"sl/tj0odj","slide":17,"title":"RESULTADOS","textShapes":17}
+{"kind":"shape","id":"sh/tovahoza","slide":17,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/ixczed8v","slide":17,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":17,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/0fepkzup","slide":17,"text":"RESULTADOS","textPreview":"RESULTADOS","textChars":10,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":17,"text":"O resultado primário mostra forte ranqueamento","textPreview":"O resultado primário mostra forte ranqueamento","textChars":46,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/bulwval8","slide":17,"text":"Na validação cruzada agrupada, a ConvNeXt-Tiny manteve AUCs altas com baixa variação.","textPreview":"Na validação cruzada agrupada, a ConvNeXt-Tiny manteve AUCs altas com baixa variação.","textChars":85,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/0je9cvix","slide":17,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":17,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":17,"bbox":[86,224,326,116]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":17,"text":"0,9709 ± 0,0059","textPreview":"0,9709 ± 0,0059","textChars":15,"textLines":1,"bbox":[108,248,282,42]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":17,"text":"AUC ROC","textPreview":"AUC ROC","textChars":7,"textLines":1,"bbox":[108,298,282,24]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":17,"bbox":[456,224,326,116]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":17,"text":"0,9607 ± 0,0121","textPreview":"0,9607 ± 0,0121","textChars":15,"textLines":1,"bbox":[478,248,282,42]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":17,"text":"AUC PR","textPreview":"AUC PR","textChars":6,"textLines":1,"bbox":[478,298,282,24]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":17,"bbox":[826,224,326,116]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":17,"text":"0,9091 ± 0,0115","textPreview":"0,9091 ± 0,0115","textChars":15,"textLines":1,"bbox":[848,248,282,42]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":17,"text":"Acc. balanceada","textPreview":"Acc. balanceada","textChars":15,"textLines":1,"bbox":[848,298,282,24]}
+{"kind":"shape","id":"sh/gr2p8nqx","slide":17,"bbox":[86,374,326,116]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":17,"text":"0,8994 ± 0,0480","textPreview":"0,8994 ± 0,0480","textChars":15,"textLines":1,"bbox":[108,398,282,42]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":17,"text":"Sensibilidade","textPreview":"Sensibilidade","textChars":13,"textLines":1,"bbox":[108,448,282,24]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":17,"bbox":[456,374,326,116]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":17,"text":"0,9188 ± 0,0400","textPreview":"0,9188 ± 0,0400","textChars":15,"textLines":1,"bbox":[478,398,282,42]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":17,"text":"Especificidade","textPreview":"Especificidade","textChars":14,"textLines":1,"bbox":[478,448,282,24]}
+{"kind":"shape","id":"sh/1032lszq","slide":17,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":17,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/judg7ads","slide":17,"text":"AUC alta indica bom ranqueamento, mas a decisão final depende do limiar.","textPreview":"AUC alta indica bom ranqueamento, mas a decisão final depende do limiar.","textChars":72,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"notes","id":"nt/tj0odj","slide":17,"text":"Este é o slide principal dos resultados. Prepare a transição para os folds e limiares."}
+{"kind":"slide","id":"sl/uv24qa","slide":18,"title":"RESULTADOS","textShapes":9}
+{"kind":"shape","id":"sh/32lszqtc","slide":18,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/sneloj2t","slide":18,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":18,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":18,"text":"RESULTADOS","textPreview":"RESULTADOS","textChars":10,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/3ex0nuxc","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":18,"text":"A variação aparece nas métricas dependentes do limiar","textPreview":"A variação aparece nas métricas dependentes do limiar","textChars":53,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":18,"text":"A composição do fold e o limiar operacional influenciam sensibilidade e especificidade.","textPreview":"A composição do fold e o limiar operacional influenciam sensibilidade e especificidade.","textChars":87,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":18,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":18,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":18,"bbox":[872,258,292,210]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":18,"text":"Interpretação","textPreview":"Interpretação","textChars":13,"textLines":1,"bbox":[900,286,230,30]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":18,"text":"AUC alta não basta. O uso em triagem depende do ponto de decisão e da composição do fold.","textPreview":"AUC alta não basta. O uso em triagem depende do ponto de decisão e da composição do fold.","textChars":89,"textLines":1,"bbox":[900,338,226,104]}
+{"kind":"shape","id":"sh/bat47y1k","slide":18,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":18,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":18,"text":"No fold 1, a sensibilidade caiu para 0,8253 enquanto a especificidade chegou a 0,9681.","textPreview":"No fold 1, a sensibilidade caiu para 0,8253 enquanto a especificidade chegou a 0,9681.","textChars":86,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"chart","id":"ch/nqxs72x4","slide":18,"name":"","chartType":"bar","bbox":[92,218,720,340]}
+{"kind":"notes","id":"nt/uv24qa","slide":18,"text":"Explique que ranquear bem não garante automaticamente o ponto de decisão ideal."}
+{"kind":"slide","id":"sl/c25bvp","slide":19,"title":"RESULTADOS","textShapes":9}
+{"kind":"shape","id":"sh/i9s36hcr","slide":19,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/p0bi9s36","slide":19,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/0fepkzup","slide":19,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":19,"text":"RESULTADOS","textPreview":"RESULTADOS","textChars":10,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/tovahoza","slide":19,"text":"O limiar operacional muda o tipo de erro","textPreview":"O limiar operacional muda o tipo de erro","textChars":40,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/032lszqt","slide":19,"text":"Ao reduzir o limiar, falsos negativos caem, mas falsos positivos sobem.","textPreview":"Ao reduzir o limiar, falsos negativos caem, mas falsos positivos sobem.","textChars":71,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/b6xkf6dc","slide":19,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":19,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/dg7adsji","slide":19,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":19,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":19,"text":"No regime de alta sensibilidade, FN caem de 60 para 30; FP sobem de 64 para 146.","textPreview":"No regime de alta sensibilidade, FN caem de 60 para 30; FP sobem de 64 para 146.","textChars":80,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"shape","id":"sh/onyd0z61","slide":19,"bbox":[168,492,372,74]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":19,"text":"FN: 60 → 30","textPreview":"FN: 60 → 30","textChars":11,"textLines":1,"bbox":[196,512,310,34]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":19,"bbox":[610,492,372,74]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":19,"text":"FP: 64 → 146","textPreview":"FP: 64 → 146","textChars":12,"textLines":1,"bbox":[638,512,310,34]}
+{"kind":"table","id":"tb/72x4nap4","slide":19,"name":"","rows":4,"cols":8,"preview":"Regime | Limiar | TN | FP | FN | TP | Sens. | Espec.","bbox":[70,218,1140,220]}
+{"kind":"notes","id":"nt/c25bvp","slide":19,"text":"Explique que essa troca pode ser aceitável em triagem apenas com revisão humana posterior."}
+{"kind":"slide","id":"sl/6sayq3","slide":20,"title":"RESULTADOS","textShapes":8}
+{"kind":"shape","id":"sh/1orytsvu","slide":20,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":20,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":20,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":20,"text":"RESULTADOS","textPreview":"RESULTADOS","textChars":10,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/1032lszq","slide":20,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":20,"text":"ConvNeXt-Tiny ranqueou melhor que ResNet50","textPreview":"ConvNeXt-Tiny ranqueou melhor que ResNet50","textChars":42,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/judg7ads","slide":20,"text":"A comparação na partição retida foi exploratória e não deve ser lida como vitória absoluta.","textPreview":"A comparação na partição retida foi exploratória e não deve ser lida como vitória absoluta.","textChars":91,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/cj6tovah","slide":20,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/54zidony","slide":20,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/0je9cvix","slide":20,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":20,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":20,"text":"A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.","textPreview":"A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.","textChars":101,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"shape","id":"sh/tcj6tova","slide":20,"bbox":[156,500,860,70]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":20,"text":"A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.","textPreview":"A ResNet50 foi competitiva e teve maior especificidade, acurácia balanceada e MCC no limiar avaliado.","textChars":101,"textLines":1,"bbox":[184,518,806,34]}
+{"kind":"table","id":"tb/itgfmlkj","slide":20,"name":"","rows":3,"cols":7,"preview":"Modelo | AUC ROC | AUC PR | Acc. bal. | Sens. | Espec. | MCC","bbox":[70,230,1140,210]}
+{"kind":"notes","id":"nt/6sayq3","slide":20,"text":"Cuidado com a interpretação. A vantagem clara da ConvNeXt-Tiny está no ranqueamento por AUC."}
+{"kind":"slide","id":"sl/9dbwzv","slide":21,"title":"RESULTADOS","textShapes":9}
+{"kind":"shape","id":"sh/8jqh0fep","slide":21,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/fyxobm58","slide":21,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":21,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":21,"text":"RESULTADOS","textPreview":"RESULTADOS","textChars":10,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":21,"text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":21,"text":"ASC-US foi a categoria mais difícil","textPreview":"ASC-US foi a categoria mais difícil","textChars":35,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":21,"text":"A análise por Bethesda mostra onde a simplificação binária ainda falha.","textPreview":"A análise por Bethesda mostra onde a simplificação binária ainda falha.","textChars":71,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/1gvy90je","slide":21,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":21,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":21,"bbox":[930,260,230,190]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":21,"text":"ASC-US","textPreview":"ASC-US","textChars":6,"textLines":1,"bbox":[958,294,174,38]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":21,"text":"81,7% de acerto\n115 células","textPreview":"81,7% de acerto | 115 células","textChars":27,"textLines":2,"bbox":[958,354,174,58]}
+{"kind":"shape","id":"sh/al87ed8b","slide":21,"bbox":[738,535,430,76]}
+{"kind":"textbox","id":"sh/z61032ls","slide":21,"text":"LEITURA","textPreview":"LEITURA","textChars":7,"textLines":1,"bbox":[758,550,90,18]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":21,"text":"ASC-US teve 81,7% de acerto entre 115 células; SCC teve suporte reduzido, com 42 células.","textPreview":"ASC-US teve 81,7% de acerto entre 115 células; SCC teve suporte reduzido, com 42 células.","textChars":89,"textLines":1,"bbox":[758,570,386,34]}
+{"kind":"chart","id":"ch/6hcrmhk3","slide":21,"name":"","chartType":"bar","bbox":[84,220,810,344]}
+{"kind":"notes","id":"nt/9dbwzv","slide":21,"text":"Reforce que ASC-US é limítrofe. Evite superinterpretar SCC por ter poucas células."}
+{"kind":"slide","id":"sl/j5mswk","slide":22,"title":"FECHAMENTO","textShapes":11}
+{"kind":"shape","id":"sh/bq1oryts","slide":22,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/4byhgn29","slide":22,"bbox":[0,0,1280,20]}
+{"kind":"shape","id":"sh/twra5gbq","slide":22,"bbox":[0,20,1280,6]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":22,"text":"FECHAMENTO","textPreview":"FECHAMENTO","textChars":10,"textLines":1,"bbox":[56,48,220,24]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":22,"text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1136,44,80,32]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":22,"text":"Conclusão: bom potencial, com limites claros","textPreview":"Conclusão: bom potencial, com limites claros","textChars":44,"textLines":1,"bbox":[56,78,920,54]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":22,"text":"O método é um protótipo de pesquisa para priorização, sem finalidade diagnóstica.","textPreview":"O método é um protótipo de pesquisa para priorização, sem finalidade diagnóstica.","textChars":81,"textLines":1,"bbox":[56,138,980,46]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":22,"bbox":[56,642,1168,1]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":22,"text":"Triagem binária de células cervicais | ConvNeXt-Tiny","textPreview":"Triagem binária de células cervicais | ConvNeXt-Tiny","textChars":52,"textLines":1,"bbox":[56,654,620,24]}
+{"kind":"shape","id":"sh/ji5snelo","slide":22,"bbox":[88,226,340,278]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":22,"text":"Limitações","textPreview":"Limitações","textChars":10,"textLines":1,"bbox":[112,258,292,34]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":22,"text":"Sem identificadores de paciente; comparação ResNet50 restrita à partição retida; sem validação externa.","textPreview":"Sem identificadores de paciente; comparação ResNet50 restrita à partição retida; sem validação externa.","textChars":103,"textLines":1,"bbox":[112,320,282,128]}
+{"kind":"shape","id":"sh/c3ylc7u5","slide":22,"bbox":[478,226,340,278]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":22,"text":"Futuro","textPreview":"Futuro","textChars":6,"textLines":1,"bbox":[502,258,292,34]}
+{"kind":"textbox","id":"sh/ulwval87","slide":22,"text":"Repetir baselines nos cinco folds, validar em outras bases, incluir explicabilidade e avançar para nível da lâmina.","textPreview":"Repetir baselines nos cinco folds, validar em outras bases, incluir explicabilidade e avançar para nível da lâmina.","textChars":115,"textLines":1,"bbox":[502,320,282,128]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":22,"bbox":[868,226,340,278]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":22,"text":"Mensagem final","textPreview":"Mensagem final","textChars":14,"textLines":1,"bbox":[892,258,292,34]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":22,"text":"A triagem por ConvNeXt-Tiny é promissora quando combinada com limiar operacional e revisão humana.","textPreview":"A triagem por ConvNeXt-Tiny é promissora quando combinada com limiar operacional e revisão humana.","textChars":98,"textLines":1,"bbox":[892,320,282,128]}
+{"kind":"notes","id":"nt/j5mswk","slide":22,"text":"Feche com equilíbrio: resultados fortes, protocolo cuidadoso e limitações explícitas antes de qualquer uso clínico."}
