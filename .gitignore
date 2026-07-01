@@ -1,12 +1,53 @@
+# Ambientes locais
 .venv/
+venv/
+env/
+
+# Dados e artefatos pesados gerados localmente
 cric_cervix/
 outputs_binary/
 outputs_binary_copy.zip
-CRIC_CLASSIFICACAO_EXECUTADO.ipynb
+*.pt
+*.pth
+*.ckpt
+
+# Execucao local
 pipeline.log
 pipeline.pid
 execucao_notebook.*.log
 execucao_notebook.pid
+*.log
+*.pid
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.out
+
+# Notebooks e historico local antigo
+CRIC_CLASSIFICACAO_EXECUTADO.ipynb
 archive/notebooks/*.ipynb
 archive/logs/*.log
-__pycache__/
+
+# Sistema, IDE e credenciais
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.*
+*.pem
+*.key
