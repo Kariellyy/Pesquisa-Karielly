@@ -9,6 +9,7 @@ from sklearn.model_selection import GroupShuffleSplit, StratifiedGroupKFold
 
 from .config import ensure_dirs, load_config
 from .data import load_prepared_metadata, prepare_data
+from .download import download_cric_dataset, raw_dataset_available
 from .metrics import binary_metrics
 from .materials import make_materials
 from .modeling import (
@@ -62,6 +63,11 @@ def cmd_prepare(args) -> None:
     config = load_config(args.config)
     ensure_dirs(config)
     prepare_data(config, force_crops=args.force, force_splits=args.force)
+
+
+def cmd_download_data(args) -> None:
+    config = load_config(args.config)
+    download_cric_dataset(config, force=args.force, limit_images=args.limit_images)
 
 
 def get_or_create_cv_assignments(config, metadata: pd.DataFrame, force: bool = False) -> pd.DataFrame:
@@ -217,8 +223,10 @@ def cmd_compare_cv(args) -> None:
 
 
 def cmd_all(args) -> None:
-    cmd_prepare(args)
     config = load_config(args.config)
+    if args.force or not raw_dataset_available(config):
+        download_cric_dataset(config, force=args.force)
+    cmd_prepare(args)
     metadata = load_prepared_metadata(config)
     run_cv_for_architecture(config, metadata, "convnext_tiny", force=args.force)
     run_cv_for_architecture(config, metadata, "resnet50", force=args.force)
@@ -238,6 +246,13 @@ def cmd_materials(args) -> None:
 
 def cmd_status(args) -> None:
     config = load_config(args.config)
+    image_count = len(list(config.images_dir.glob("cric_image_*.png")))
+    if config.annotations_csv.exists():
+        print(f"[ok]      cric_annotations     {config.annotations_csv}")
+    else:
+        print(f"[faltando] cric_annotations     {config.annotations_csv}")
+    image_status = "ok" if image_count == 400 else "faltando"
+    print(f"[{image_status}] {('cric_images'):20s} {config.images_dir} ({image_count}/400)")
     artifacts = [
         ("metadata", config.metadata_csv),
         ("splits", config.splits_csv),
@@ -278,6 +293,7 @@ def build_parser() -> argparse.ArgumentParser:
         "check": cmd_check,
         "status": cmd_status,
         "benchmark": cmd_benchmark,
+        "download-data": cmd_download_data,
         "prepare": cmd_prepare,
         "cv": cmd_cv,
         "cv-convnext": cmd_cv,
@@ -293,6 +309,8 @@ def build_parser() -> argparse.ArgumentParser:
         if name == "benchmark":
             p.add_argument("--batches", nargs="+", type=int, default=[24, 48, 64])
             p.add_argument("--steps", type=int, default=20)
+        if name == "download-data":
+            p.add_argument("--limit-images", type=int, default=None)
         if name == "materials":
             p.add_argument("--output", default="materiais_artigo")
         if name == "cv":

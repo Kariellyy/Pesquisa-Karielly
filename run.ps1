@@ -1,10 +1,11 @@
 param(
-    [ValidateSet("check", "status", "prepare", "cv", "cv-convnext", "cv-resnet50", "compare-cv", "all", "package", "materials", "benchmark", "gpu", "clean-cache")]
+    [ValidateSet("check", "status", "download-data", "prepare", "cv", "cv-convnext", "cv-resnet50", "compare-cv", "all", "package", "materials", "benchmark", "gpu", "clean-cache")]
     [string]$Step = "check",
     [switch]$Force,
     [string]$Config = "configs/local_3060.json",
     [int[]]$Batches = @(24, 48, 64),
     [int]$Steps = 20,
+    [int]$LimitImages = 0,
     [string]$Output = "materiais_artigo"
 )
 
@@ -37,6 +38,10 @@ try {
         }
         $argsList += "--steps"
         $argsList += [string]$Steps
+    }
+    if ($Step -eq "download-data" -and $LimitImages -gt 0) {
+        $argsList += "--limit-images"
+        $argsList += [string]$LimitImages
     }
     if ($Step -eq "materials") {
         $argsList += "--output"

@@ -38,6 +38,27 @@ Ver artefatos existentes:
 .\run.ps1 status
 ```
 
+Baixar a base CRIC Cervix do Figshare:
+
+```powershell
+.\run.ps1 download-data
+```
+
+O downloader usa a API publica do Figshare. As classificacoes vem do artigo
+`CRIC Cervix Classification` (`12233156`) e as 400 imagens vem da colecao
+`4960286`. Os arquivos sao organizados no formato consumido pelo codigo:
+
+- `cric_cervix/classification/classifications.csv`
+- `cric_cervix/classification/classifications.json`
+- `cric_cervix/classification/README.md`
+- `cric_cervix/images/cric_image_001_<hash>.png` ate `cric_image_400_<hash>.png`
+
+Para testar o downloader sem baixar a base inteira:
+
+```powershell
+.\run.ps1 download-data -LimitImages 1
+```
+
 Preparar recortes e metadados, se ainda faltar:
 
 ```powershell
