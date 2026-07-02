@@ -1,17 +1,19 @@
 \begin{tabular}{ll}
 \toprule
-Parâmetro & Valor \\
+Parametro & Valor \\
 \midrule
 Arquitetura principal & ConvNeXt-Tiny \\
-Baseline & ResNet50 \\
-Dimensão de entrada & 224x224x3 \\
+Arquitetura comparada & ResNet-50 \\
+Dimensao de entrada & 224x224x3 \\
 Batch size & 48 \\
 Otimizador & AdamW \\
 Taxa de aprendizado & 0.000300 \\
 Decaimento de peso & 0.000100 \\
-Épocas & 12 \\
+Epocas por fold & 6 \\
+Early stopping & paciencia 2, delta 0.0005 \\
 Label smoothing & 0.030000 \\
-TTA na partição retida & Espelho horizontal \\
 Folds da CV & 5 \\
+Agrupamento dos folds & id_imagem \\
+Limiar por fold & 0,50 \\
 \bottomrule
 \end{tabular}

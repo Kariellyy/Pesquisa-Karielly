@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\usetikzlibrary{arrows.meta,positioning}
+\pgfplotsset{compat=1.18}
+
+\newcommand{\kariellytablefont}{\small}
+\newcommand{\kariellycompacttablefont}{\footnotesize}
+\newcommand{\kariellytablecols}{\setlength{\tabcolsep}{4pt}}
+
+\graphicspath{{figuras/}}
+\urlstyle{same}
+\sloppy
+
+\title{Triagem Binária de Células Cervicais em Esfregaços Convencionais
+com ConvNeXt-Tiny e Particionamento por Imagem}
+
+\author{Karielly de Carvalho\inst{1}, João Antônio Leal de Miranda\inst{1}\\
+Romuere Rodrigues Veloso e Silva\inst{1}}
+
+\address{
+  Universidade Federal do Piauí (UFPI) -- Campus Senador Helvídio Nunes de Barros\\
+  Picos -- PI -- Brasil\\
+  \email{\{karielly.carvalho,joaoantonio,romuere\}@ufpi.edu.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{resumo}
+Este trabalho avalia a triagem binária de células cervicais em esfregaços
+convencionais de Papanicolau usando ConvNeXt-Tiny na coleção CRIC Cervix. O
+desenho experimental emprega validação cruzada em cinco folds agrupada por
+imagem-fonte, de modo que células da mesma imagem não sejam compartilhadas
+entre treino e avaliação dentro de um fold. Como comparação complementar, uma
+ResNet-50 foi treinada no mesmo particionamento. No limiar 0,50 e sem
+\emph{test-time augmentation}, a ConvNeXt-Tiny obteve AUC ROC de
+$0{,}9709\pm0{,}0059$ e AUC PR de $0{,}9607\pm0{,}0121$, enquanto a ResNet-50
+obteve AUC ROC de $0{,}9668\pm0{,}0082$ e AUC PR de $0{,}9513\pm0{,}0186$.
+As métricas dependentes do limiar foram muito próximas: acurácia balanceada de
+$0{,}9091\pm0{,}0115$ para ConvNeXt-Tiny e $0{,}9105\pm0{,}0139$ para ResNet-50.
+Os resultados apoiam a ConvNeXt-Tiny como modelo principal, com desempenho
+semelhante ao comparador e maior AUC média; as diferenças entre as duas
+arquiteturas não foram estatisticamente significativas nos cinco folds. Como a CRIC não fornece
+identificadores de paciente, o agrupamento por imagem é o controle de
+independência mais forte disponível neste estudo, mas não garante separação no
+nível do paciente.
+\end{resumo}
+
+\input{capitulos/01-introducao}
+\input{capitulos/02-trabalhos-relacionados}
+\input{capitulos/03-metodologia}
+\input{capitulos/04-resultados}
+\input{capitulos/07-conclusao}
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}

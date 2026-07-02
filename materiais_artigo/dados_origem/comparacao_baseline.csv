@@ -1,3 +1,0 @@
-,roc_auc,pr_auc_precisao_media,acuracia_balanceada,sensibilidade_anormal,especificidade_normal,f1_anormal,mcc,brier_score
-ConvNeXt-Tiny,0.9816,0.9805,0.9371,0.9373,0.937,0.9331,0.8738,0.0524
-ResNet50,0.971,0.975,0.9401,0.9064,0.9738,0.9362,0.8852,0.0491

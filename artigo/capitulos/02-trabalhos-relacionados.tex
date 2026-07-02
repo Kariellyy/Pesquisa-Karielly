@@ -1,0 +1,53 @@
+\section{Trabalhos Relacionados}
+
+\subsection{Bases e tarefas em citologia cervical}
+
+Bases como Herlev e SIPaKMeD são frequentes em estudos de classificação
+cervical \cite{jiang2023systematic,fang2024systematic}. A SIPaKMeD reúne
+células extraídas de esfregaços de Papanicolau para classificação por atributos
+e imagens \cite{plissiti2018sipakmed}. Embora úteis para comparação, bases de
+células isoladas não reproduzem integralmente sobreposição, inflamação,
+variação de fundo e outros fatores encontrados em exames convencionais.
+
+A CRIC Cervix foi construída a partir de 400 imagens de citologia convencional
+e contém 11.534 células classificadas por citopatologistas
+\cite{rezende2021cric}. A coleção inclui NILM, ASC-US, LSIL, ASC-H, HSIL e
+SCC, preservando desafios de lâminas reais, como células sobrepostas e
+elementos inflamatórios. Por isso, é útil para estudar variação entre imagens,
+desde que a dependência entre células da mesma imagem seja considerada.
+Essa característica diferencia a CRIC de bases compostas por células isoladas:
+o modelo pode explorar tanto atributos celulares quanto padrões de aquisição,
+coloração e fundo compartilhados por uma mesma imagem. Assim, o particionamento
+por imagem é parte central do desenho experimental.
+
+\subsection{Aprendizado profundo para classificação cervical}
+
+Estudos recentes reportam desempenho elevado com redes profundas em Herlev,
+SIPaKMeD e outras bases de citologia cervical. Kaur et al. compararam modelos
+de transferência e reportaram 95\% de acurácia com ResNet50 em Herlev binário
+\cite{kaur2025comparison}; Mehedi et al. obtiveram 98,53\% de acurácia com
+CCanNet em SIPaKMeD de cinco classes \cite{mehedi2024lightweight}; e Lima et
+al. reportaram 98,35\% em Herlev binário e 99,73\% em SIPaKMeD binário com
+\emph{ensembles} \cite{lima2025ensemble}. Especificamente com ConvNeXt, Tang et
+al.\ reportaram alta precisão na classificação de lesões precursoras cervicais,
+evidenciando o potencial dessa família em citologia \cite{tang2023convnext}.
+Esses resultados são relevantes como
+contexto, mas não são diretamente comparáveis ao presente estudo por diferenças
+de base, preparação, número de classes, métrica principal e unidade de
+particionamento. Assim, mais do que confrontar percentuais absolutos, a
+comparação com a literatura deve considerar se a separação entre treino e teste
+ocorre no nível de célula, imagem, lâmina ou paciente.
+
+Em citologia convencional, Rodríguez et al. reportaram sensibilidade 0,688 e
+especificidade 0,762 em esfregaços de Papanicolau, indicando maior dificuldade
+que em bases de células isoladas ou citologia em meio líquido
+\cite{rodriguez2024automated}. Este trabalho se diferencia pelo protocolo:
+CRIC, separação por imagem, validação cruzada agrupada, ajuste fino da
+ConvNeXt-Tiny em cinco folds e apresentação explícita da variabilidade entre
+partições.
+
+Além do desempenho, o relato de estudos de IA em saúde deve permitir
+interpretação crítica do risco de viés, da independência dos dados e da
+aplicabilidade do modelo \cite{collins2024tripod,tejani2024claim}. Essa
+preocupação é especialmente relevante em citologia baseada em recortes, pois
+várias amostras podem vir do mesmo campo microscópico.

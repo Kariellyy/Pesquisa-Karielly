@@ -1,0 +1,31 @@
+\section{Introdução}
+
+O câncer do colo do útero permanece entre as principais causas evitáveis de
+morbidade e mortalidade por câncer em mulheres. Estimativas globais para 2020
+indicam aproximadamente 604 mil novos casos e 342 mil mortes, com maior carga
+em regiões que enfrentam restrições de acesso à vacinação, ao rastreamento e ao
+tratamento oportuno \cite{singh2023global}. A citologia cervical continua sendo
+um componente relevante de programas de rastreamento, mas a leitura manual de
+lâminas é trabalhosa, depende de especialistas e envolve alterações
+morfológicas sutis.
+
+Redes neurais profundas têm apresentado resultados promissores na análise de
+imagens citológicas \cite{jiang2023systematic,fang2024systematic}. Entretanto, a
+comparação entre métodos é dificultada por diferenças de base, preparação da
+lâmina, tarefa, granularidade dos rótulos e protocolo de validação
+\cite{fang2024systematic}. Um risco central ocorre quando células recortadas da
+mesma imagem aparecem em treino e avaliação: elas compartilham coloração,
+aquisição, fundo e artefatos, podendo superestimar a generalização para imagens
+não vistas.
+Por isso, diretrizes de relato para modelos preditivos e inteligência
+artificial em imagens médicas recomendam explicitar fonte dos dados, unidade de
+análise, nível de separação entre conjuntos e uso pretendido do sistema
+\cite{collins2024tripod,tejani2024claim}.
+
+Este artigo estuda a classificação binária \emph{normal versus anormal} de
+células da coleção CRIC Cervix. ASC-US, LSIL, ASC-H, HSIL e SCC compõem a
+classe anormal, enquanto NILM compõe a classe normal. A contribuição principal é
+avaliar a ConvNeXt-Tiny \cite{liu2022convnext} com validação cruzada agrupada
+por imagem-fonte, reportando média, desvio-padrão e variação fold a fold. Para
+contextualizar o desempenho, inclui-se a ResNet-50 \cite{he2016resnet} como
+comparador complementar treinado nos mesmos folds.

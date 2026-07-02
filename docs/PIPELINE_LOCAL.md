@@ -1,17 +1,30 @@
-# Pipeline local CRIC na RTX 3060 6 GB
+# Pipeline local CRIC com validacao cruzada
 
-Este repositório não depende mais de Jupyter para executar a pesquisa. O fluxo
-local roda por uma CLI Python retomável, com checkpoints e CSVs gravados por
-etapa.
+Este repositorio roda a comparacao binaria normal/anormal da CRIC por validacao
+cruzada agrupada por imagem. O desenho experimental valido para o artigo e:
+
+- 5 folds com `StratifiedGroupKFold`;
+- grupo de separacao: `id_imagem`;
+- mesmos folds para ConvNeXt-Tiny e ResNet-50;
+- mesmos folds, aumentos, otimizador, batch size e limiar 0,50;
+- ate 6 epocas por fold, com early stopping de paciencia 2;
+- unica diferenca intencional: arquitetura do backbone.
+
+O comparativo antigo por treino/validacao/teste fixos foi arquivado em `archive`
+e nao deve ser citado como comparacao entre ConvNeXt-Tiny e ResNet-50.
+
+Os historicos ja salvos do ConvNeXt-Tiny indicam melhor AUC de validacao nas
+epocas 1, 3, 3, 4 e 6, respectivamente. Por isso, o teto de 6 epocas reduz o
+tempo sem cortar a faixa em que o modelo principal convergiu.
 
 ## Hardware alvo
 
 - NVIDIA GeForce RTX 3060 Laptop GPU
 - 6 GB de VRAM
-- Batch padrão: 48
-- Precisão mista CUDA ativada
+- Batch padrao: 48
+- Precisao mista CUDA ativada
 
-## Comandos principais
+## Comandos
 
 Verificar GPU e ambiente:
 
@@ -19,58 +32,46 @@ Verificar GPU e ambiente:
 .\run.ps1 check
 ```
 
-Ver artefatos já existentes e o que ainda falta:
+Ver artefatos existentes:
 
 ```powershell
 .\run.ps1 status
 ```
 
-Testar batches antes de uma rodada longa:
-
-```powershell
-.\run.ps1 benchmark -Batches 24,48,64 -Steps 20
-```
-
-Preparar recortes e partições:
+Preparar recortes e metadados, se ainda faltar:
 
 ```powershell
 .\run.ps1 prepare
 ```
 
-Treinar ConvNeXt-Tiny:
+Rodar ou retomar a CV do ConvNeXt-Tiny:
 
 ```powershell
-.\run.ps1 train
+.\run.ps1 cv-convnext
 ```
 
-Avaliar a partição retida com TTA, temperatura, limiares e bootstrap:
+Rodar ou retomar a CV do ResNet-50 nos mesmos folds:
 
 ```powershell
-.\run.ps1 eval
+.\run.ps1 cv-resnet50
 ```
 
-Rodar validação cruzada agrupada por imagem:
+Gerar a comparacao pareada fold a fold:
 
 ```powershell
-.\run.ps1 cv
+.\run.ps1 compare-cv
 ```
 
-Treinar e avaliar baseline ResNet50:
-
-```powershell
-.\run.ps1 baseline
-```
-
-Rodar tudo:
-
-```powershell
-.\run.ps1 all
-```
-
-Gerar tabelas, métricas e figuras para o artigo:
+Gerar tabelas, metricas e figuras para o artigo:
 
 ```powershell
 .\run.ps1 materials
+```
+
+Executar o fluxo completo:
+
+```powershell
+.\run.ps1 all
 ```
 
 Monitorar GPU em outro terminal:
@@ -79,31 +80,34 @@ Monitorar GPU em outro terminal:
 .\run.ps1 gpu
 ```
 
-Forçar recomputação de uma etapa:
+Forcar recomputacao de uma etapa:
 
 ```powershell
-.\run.ps1 train -Force
-.\run.ps1 cv -Force
+.\run.ps1 cv-resnet50 -Force
 ```
 
-## Retomada e proteção contra perda
+Use `-Force` com cuidado: ele retreina os folds da arquitetura chamada.
 
-- `outputs_binary/checkpoints/best_convnext_tiny_binary.pt`: melhor ConvNeXt.
-- `outputs_binary/checkpoints/best_convnext_tiny_binary.history.csv`: histórico do treino principal.
-- `outputs_binary/checkpoints/best_resnet50_binary.pt`: baseline.
-- `outputs_binary/checkpoints/cv_fold_*_convnext_tiny.pt`: folds da CV.
-- `outputs_binary/metrics/validacao_cruzada_folds.csv`: salvo ao fim de cada fold.
-- `outputs_binary/metrics/validacao_cruzada_resumo.csv`: média e desvio dos folds.
-- `outputs_binary/metrics/comparacao_baseline.csv`: ConvNeXt x ResNet50.
+## Artefatos
 
-Se uma etapa já possui artefato final, ela é pulada automaticamente. Use
-`-Force` apenas quando quiser retreinar.
+- `outputs_binary/cv/fold_assignments.csv`: definicao unica dos folds por imagem.
+- `outputs_binary/convnext_tiny/checkpoints/cv_fold_*_convnext_tiny.pt`: checkpoints ConvNeXt-Tiny.
+- `outputs_binary/convnext_tiny/metrics/validacao_cruzada_folds.csv`: metricas por fold ConvNeXt-Tiny.
+- `outputs_binary/convnext_tiny/metrics/validacao_cruzada_resumo.csv`: media e desvio ConvNeXt-Tiny.
+- `outputs_binary/resnet50/checkpoints/cv_fold_*_resnet50.pt`: checkpoints ResNet-50.
+- `outputs_binary/resnet50/metrics/validacao_cruzada_folds.csv`: metricas por fold ResNet-50.
+- `outputs_binary/resnet50/metrics/validacao_cruzada_resumo.csv`: media e desvio ResNet-50.
+- `outputs_binary/comparacao_cv/comparacao_cv_folds.csv`: folds dos dois modelos em formato longo.
+- `outputs_binary/comparacao_cv/comparacao_cv_resumo.csv`: media e desvio por modelo/metrica.
+- `outputs_binary/comparacao_cv/comparacao_cv_pareada.csv`: deltas fold a fold.
 
-## Observação sobre CPU alta
+## Retomada
 
-Leitura de PNG, Pillow e aumentos de dados rodam na CPU. O modelo, o forward,
-o backward e o otimizador rodam na GPU. A GPU pode aparecer abaixo de 100% se
-a CPU estiver alimentando lotes mais devagar do que a GPU consome.
+Cada fold salvo e reaproveitado automaticamente. Se o treino do ResNet-50 parar
+no fold 3, por exemplo, rode novamente:
 
-O lote 48 usa melhor a VRAM que o lote 24 original. O lote 64 pode ser mais
-rápido, mas deve ser confirmado com `benchmark` antes de uma CV longa.
+```powershell
+.\run.ps1 cv-resnet50
+```
+
+A pipeline pula os folds ja presentes no CSV de metricas e continua do proximo.

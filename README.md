@@ -1,91 +1,44 @@
-# Pesquisa CRIC ConvNeXt-Tiny
+# Pesquisa CRIC - comparacao K-fold
 
-Repositório acadêmico da pesquisa **Triagem Binária de Células Cervicais em
-Esfregaços Convencionais com ConvNeXt-Tiny e Particionamento por Imagem**.
+Pipeline local para comparar ConvNeXt-Tiny e ResNet-50 na classificacao binaria
+normal/anormal de celulas cervicais da base CRIC.
 
-- Autora: Karielly de Carvalho
-- Coorientador: João Antônio Leal de Miranda
-- Orientador: Romuere Rodrigues Veloso e Silva
-- Instituição: Universidade Federal do Piauí (UFPI), Campus Senador Helvídio
-  Nunes de Barros (CSHNB)
-- Repositório: <https://github.com/Kariellyy/Pesquisa-Karielly>
+O fluxo valido para o artigo e a validacao cruzada agrupada por imagem, com 5
+folds e mesma definicao de holdout por fold para as duas arquiteturas. A CV usa
+ate 6 epocas por fold com early stopping, pois os folds ja treinados do
+ConvNeXt-Tiny atingiram melhor validacao entre as epocas 1 e 6. O comparativo
+antigo por treino/validacao/teste fixos foi arquivado e nao deve ser usado no
+paper.
 
-O trabalho avalia uma pipeline de triagem binária normal/anormal de células
-cervicais da coleção pública CRIC Cervix, com ConvNeXt-Tiny, partições
-agrupadas por imagem-fonte e análise de limiares operacionais.
-
-## Estrutura
-
-- `src/cric_pipeline/`: código-fonte da pipeline.
-- `configs/local_3060.json`: configuração dos experimentos locais.
-- `scripts/`: scripts auxiliares de verificação.
-- `docs/`: documentação de uso, dados, resultados e execução local.
-- `materiais_artigo/`: tabelas, métricas e figuras finais geradas para o artigo.
-- `artigo - romuere/`: artigo compacto para entrega/apresentação.
-- `artigo - eniac/`: artigo completo preparado para submissão ao ENIAC.
-- `cric_cervix/`: base CRIC local, não versionada.
-- `outputs_binary/`: recortes, checkpoints, métricas e saídas intermediárias,
-  não versionados.
-
-## Instalação
-
-O fluxo local foi preparado para Windows/PowerShell com Python 3.12 e GPU NVIDIA
-RTX 3060 Laptop de 6 GB.
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-local.txt
-```
-
-Organize a base CRIC em `cric_cervix/`, conforme descrito em
-[`docs/DADOS.md`](docs/DADOS.md).
-
-## Execução
-
-Verificar ambiente e GPU:
+## Comandos principais
 
 ```powershell
 .\run.ps1 check
-```
-
-Executar etapas individuais:
-
-```powershell
 .\run.ps1 status
 .\run.ps1 prepare
-.\run.ps1 benchmark
-.\run.ps1 train
-.\run.ps1 eval
-.\run.ps1 cv
-.\run.ps1 baseline
+.\run.ps1 cv-convnext
+.\run.ps1 cv-resnet50
+.\run.ps1 compare-cv
 .\run.ps1 materials
 ```
 
-Executar tudo em sequência:
+Como o ConvNeXt-Tiny ja possui os 5 folds treinados, o comando novo mais
+importante e:
 
 ```powershell
-.\run.ps1 all
+.\run.ps1 cv-resnet50
+.\run.ps1 compare-cv
+.\run.ps1 materials
 ```
 
-Monitorar GPU:
+## Pastas principais
 
-```powershell
-.\run.ps1 gpu
-```
+- `src/cric_pipeline/`: codigo da pipeline.
+- `configs/local_3060.json`: configuracao local da RTX 3060.
+- `cric_cervix/`: base de dados local, ignorada pelo Git.
+- `outputs_binary/convnext_tiny/`: folds, historicos e metricas do ConvNeXt-Tiny.
+- `outputs_binary/resnet50/`: folds, historicos e metricas do ResNet-50.
+- `outputs_binary/comparacao_cv/`: comparacao fold a fold entre os modelos.
+- `archive/`: notebooks e resultados antigos preservados como historico.
 
-Documentação detalhada: [`docs/PIPELINE_LOCAL.md`](docs/PIPELINE_LOCAL.md) e
-[`docs/USO.md`](docs/USO.md).
-
-## Resultados e artigo
-
-Os materiais finais usados no texto ficam em `materiais_artigo/`. A base
-completa e os checkpoints treinados não são versionados por tamanho; eles devem
-ser regenerados localmente ou mantidos fora do Git.
-
-O artigo compacto para entrega está em `artigo - romuere/`. O artigo completo do
-ENIAC está em `artigo - eniac/`.
-
-## Aviso acadêmico
-
-Este repositório tem finalidade acadêmica e reprodutível. O método descrito é
-um protótipo de pesquisa para priorização e não possui finalidade diagnóstica.
+Documentacao detalhada: [docs/PIPELINE_LOCAL.md](docs/PIPELINE_LOCAL.md).

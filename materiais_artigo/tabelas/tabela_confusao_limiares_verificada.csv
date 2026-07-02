@@ -1,4 +1,0 @@
-Regime,Limiar,TN,FP,FN,TP,Sensibilidade,Especificidade
-"0,50",0.500,1079,64,60,944,0.9402,0.9440
-Youden,0.287,1061,82,48,956,0.9522,0.9283
-Alta sens.,0.099,997,146,30,974,0.9701,0.8723

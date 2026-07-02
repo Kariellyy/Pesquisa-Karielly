@@ -143,17 +143,32 @@ def fit_model(
     force: bool = False,
     seed: int | None = None,
 ) -> pd.DataFrame:
-    if checkpoint_path.exists() and not force:
-        print(f"Checkpoint existente; pulando treino: {checkpoint_path}")
-        history_path = checkpoint_path.with_suffix(".history.csv")
-        if history_path.exists():
-            return pd.read_csv(history_path)
-        return pd.DataFrame()
-
     seed_everything(config.seed if seed is None else seed)
     device = require_cuda(config.expected_gpu)
     model = model_fn().to(device)
     model = model.to(memory_format=torch.channels_last)
+    history_path = checkpoint_path.with_suffix(".history.csv")
+    history = []
+    start_epoch = 1
+    best_score = -np.inf
+
+    if checkpoint_path.exists() and not force:
+        if history_path.exists():
+            current_history = pd.read_csv(history_path)
+            history = current_history.to_dict("records")
+            if len(current_history) >= epochs:
+                print(f"Checkpoint existente; pulando treino: {checkpoint_path}")
+                return current_history
+            if "auc_validacao" in current_history:
+                best_score = float(current_history["auc_validacao"].fillna(current_history["acuracia_validacao"]).max())
+            start_epoch = len(current_history) + 1
+            payload = torch.load(checkpoint_path, map_location=device, weights_only=False)
+            model.load_state_dict(payload.get("estado_modelo", payload.get("model_state")))
+            print(f"Retomando treino em {checkpoint_path}: epoca {start_epoch}/{epochs}")
+        else:
+            print(f"Checkpoint existente; pulando treino: {checkpoint_path}")
+            return pd.DataFrame()
+
     criterion = nn.CrossEntropyLoss(label_smoothing=config.label_smoothing)
     optimizer = torch.optim.AdamW(model.parameters(), lr=config.learning_rate, weight_decay=config.weight_decay)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
@@ -161,12 +176,12 @@ def fit_model(
     train_dl = train_loader(config, train_df, device)
     val_dl = eval_loader(config, val_df, device)
 
-    history = []
-    best_score = -np.inf
     checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
-    history_path = checkpoint_path.with_suffix(".history.csv")
+    patience = max(0, int(getattr(config, "early_stopping_patience", 0)))
+    min_delta = float(getattr(config, "early_stopping_min_delta", 0.0))
+    stale_epochs = 0
 
-    for epoch in range(1, epochs + 1):
+    for epoch in range(start_epoch, epochs + 1):
         torch.cuda.reset_peak_memory_stats(device)
         train_metrics = run_epoch(model, train_dl, criterion, optimizer, scaler, device)
         val_metrics = run_epoch(model, val_dl, criterion, None, scaler, device)
@@ -184,8 +199,10 @@ def fit_model(
         }
         history.append(row)
         pd.DataFrame(history).to_csv(history_path, index=False)
-        if score > best_score:
+        improved = score > best_score + min_delta
+        if improved:
             best_score = score
+            stale_epochs = 0
             torch.save(
                 {
                     "estado_modelo": model.state_dict(),
@@ -196,11 +213,16 @@ def fit_model(
                 },
                 checkpoint_path,
             )
+        else:
+            stale_epochs += 1
         peak = torch.cuda.max_memory_allocated(device) / 1024**3
         print(
             f"Epoca {epoch:02d}/{epochs} | val_auc={val_metrics['auc']:.4f} "
             f"val_acc={val_metrics['accuracy']:.4f} | pico_vram={peak:.2f} GB"
         )
+        if patience and stale_epochs >= patience:
+            print(f"Early stopping: sem melhora por {stale_epochs} epocas.")
+            break
     return pd.DataFrame(history)
 
 

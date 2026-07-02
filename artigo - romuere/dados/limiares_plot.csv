@@ -1,4 +1,0 @@
-regime,threshold,sensitivity,specificity,balanced_acc,f1,mcc
-0.50,0.500,0.9402,0.9440,0.9421,0.9384,0.8840
-Youden,0.287,0.9522,0.9283,0.9402,0.9363,0.8791
-Alta sens.,0.099,0.9701,0.8723,0.9212,0.9171,0.8414

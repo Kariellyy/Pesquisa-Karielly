@@ -1,0 +1,10 @@
+Modelo,Metrica,Media,Desvio,Media +/- DP
+ConvNeXt-Tiny,AUC ROC,"0,9709","0,0059","0,9709 +/- 0,0059"
+ConvNeXt-Tiny,AUC PR,"0,9607","0,0121","0,9607 +/- 0,0121"
+ConvNeXt-Tiny,Acc. bal.,"0,9091","0,0115","0,9091 +/- 0,0115"
+ConvNeXt-Tiny,Sensibilidade,"0,8994","0,0480","0,8994 +/- 0,0480"
+ConvNeXt-Tiny,Especificidade,"0,9188","0,0400","0,9188 +/- 0,0400"
+ConvNeXt-Tiny,F1,"0,8926","0,0128","0,8926 +/- 0,0128"
+ConvNeXt-Tiny,MCC,"0,8189","0,0208","0,8189 +/- 0,0208"
+ConvNeXt-Tiny,Kappa,"0,8164","0,0223","0,8164 +/- 0,0223"
+ConvNeXt-Tiny,Brier,"0,0699","0,0079","0,0699 +/- 0,0079"

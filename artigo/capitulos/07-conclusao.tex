@@ -1,0 +1,37 @@
+\section{Conclusão}
+
+Este trabalho avaliou a ConvNeXt-Tiny na triagem binária de células cervicais
+da CRIC Cervix usando validação cruzada em cinco folds agrupada por imagem. O
+modelo apresentou AUC ROC de $0{,}9709\pm0{,}0059$ e AUC PR de
+$0{,}9607\pm0{,}0121$. A comparação complementar com ResNet-50 nos mesmos folds
+mostrou desempenho operacional muito próximo, mas menor AUC ROC e AUC PR
+médias para a ResNet-50. As diferenças em sensibilidade, especificidade e
+acurácia balanceada foram pequenas e variaram entre folds, indicando que a
+composição das imagens e o limiar operacional também influenciam o desempenho
+observado.
+
+A análise reforça a importância de reportar média, desvio-padrão e variação
+fold a fold em estudos com recortes celulares. O particionamento por imagem
+reduz vazamento entre treino e avaliação e torna a comparação entre ConvNeXt-Tiny
+e ResNet-50 mais controlada, pois ambas as arquiteturas enfrentam os mesmos
+subconjuntos de imagens. Ainda assim, como a CRIC não fornece identificadores de
+paciente, o protocolo não garante independência no nível do paciente ou da
+lâmina. Ademais, a ResNet-50 foi ajustada com orçamento de épocas menor, restrito
+à janela em que a ConvNeXt-Tiny alcançou seus melhores checkpoints; embora isso
+padronize o critério de seleção, uma comparação com orçamento idêntico permanece
+como trabalho futuro.
+
+Em relação à literatura, o resultado deve ser lido com cautela: acurácias
+elevadas reportadas em Herlev, SIPaKMeD e outras bases não são diretamente
+intercambiáveis com a CRIC, que contém citologia convencional com maior
+variação visual, sobreposição celular e fundo heterogêneo. A contribuição deste
+trabalho está menos em comparar números absolutos com bases distintas e mais em
+estabelecer uma avaliação reprodutível, agrupada por imagem e pareada entre
+arquiteturas.
+
+Os resultados devem ser interpretados como evidência experimental para
+priorização celular, não como validação clínica de um sistema diagnóstico.
+Trabalhos futuros devem avaliar calibração, escolha de limiar, validação
+externa, análise por categoria Bethesda, detecção em campos completos e
+agregação no nível da lâmina. Código, configurações e materiais complementares:
+\url{https://github.com/Kariellyy/Pesquisa-Karielly}.

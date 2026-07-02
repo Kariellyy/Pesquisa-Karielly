@@ -41,6 +41,42 @@ def standardize_metadata(table: pd.DataFrame) -> pd.DataFrame:
     return table
 
 
+def normalize_metadata_paths(config: Config, table: pd.DataFrame) -> pd.DataFrame:
+    table = standardize_metadata(table)
+    if "caminho_recorte" in table.columns:
+        table["caminho_recorte"] = [
+            str(resolve_crop_path(config, row))
+            for row in table.itertuples(index=False)
+        ]
+    if "caminho_imagem" in table.columns:
+        table["caminho_imagem"] = [
+            str(resolve_image_path(config, row))
+            for row in table.itertuples(index=False)
+        ]
+    return table
+
+
+def resolve_crop_path(config: Config, row) -> Path:
+    current = Path(str(row.caminho_recorte))
+    if current.exists():
+        return current
+    label = str(row.rotulo_binario)
+    candidate = config.crops_dir / label / current.name
+    if candidate.exists():
+        return candidate
+    raise FileNotFoundError(f"Recorte nao encontrado: {current} nem {candidate}")
+
+
+def resolve_image_path(config: Config, row) -> Path:
+    current = Path(str(row.caminho_imagem))
+    if current.exists():
+        return current
+    candidate = config.images_dir / current.name
+    if candidate.exists():
+        return candidate
+    return find_image_path(config, int(row.id_imagem), str(row.arquivo_imagem))
+
+
 def find_image_path(config: Config, image_id: int, image_file: str) -> Path:
     suffix = Path(str(image_file)).name
     candidates = sorted(config.images_dir.glob(f"cric_image_{int(image_id):03d}_*.png"))
@@ -98,7 +134,7 @@ def generate_crops(config: Config, force: bool = False) -> pd.DataFrame:
     ensure_dirs(config)
     if config.metadata_csv.exists() and not force:
         print(f"Usando metadados existentes: {config.metadata_csv}")
-        return standardize_metadata(pd.read_csv(config.metadata_csv))
+        return normalize_metadata_paths(config, pd.read_csv(config.metadata_csv))
 
     annotations = load_annotations(config)
     rows = []
@@ -136,7 +172,7 @@ def generate_crops(config: Config, force: bool = False) -> pd.DataFrame:
 def add_or_load_splits(config: Config, metadata: pd.DataFrame, force: bool = False) -> pd.DataFrame:
     if config.splits_csv.exists() and not force:
         print(f"Usando particoes existentes: {config.splits_csv}")
-        return standardize_metadata(pd.read_csv(config.splits_csv))
+        return normalize_metadata_paths(config, pd.read_csv(config.splits_csv))
 
     table = metadata.copy().reset_index(drop=True)
     train_idx, temp_idx = next(
@@ -168,4 +204,4 @@ def prepare_data(config: Config, force_crops: bool = False, force_splits: bool =
 def load_prepared_metadata(config: Config) -> pd.DataFrame:
     if not config.splits_csv.exists():
         return prepare_data(config)
-    return standardize_metadata(pd.read_csv(config.splits_csv))
+    return normalize_metadata_paths(config, pd.read_csv(config.splits_csv))

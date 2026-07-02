@@ -1,0 +1,121 @@
+\section{Metodologia}
+
+\subsection{Base de dados e desfecho}
+
+Foram utilizadas as 400 imagens e as 11.534 anotações celulares da CRIC Cervix
+\cite{rezende2021cric}. A classe normal reúne 6.779 células NILM. A classe
+anormal reúne 4.755 células: 606 ASC-US, 1.360 LSIL, 925 ASC-H, 1.703 HSIL e
+161 SCC, segundo o Sistema Bethesda \cite{nayar2015bethesda}. A escolha binária
+representa um primeiro estágio de priorização e não substitui a classificação
+Bethesda.
+
+Para cada anotação, foi gerado um recorte RGB de $224\times224$ pixels centrado
+na coordenada do núcleo. Recortes que ultrapassavam as bordas foram completados
+com fundo branco. Não foi realizada segmentação do núcleo ou do citoplasma,
+permitindo que a rede utilizasse o contexto celular local. A
+Figura~\ref{fig:amostras} ilustra recortes reais utilizados no treinamento e na
+avaliação.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.82\textwidth]{amostras_cric_cv.png}
+\caption{Exemplos de recortes reais da CRIC Cervix usados no protocolo binário.
+A linha superior mostra células NILM; a inferior inclui categorias Bethesda
+anormais.}
+\label{fig:amostras}
+\end{figure}
+
+\subsection{Validação cruzada agrupada}
+
+A unidade de agrupamento foi a imagem original. A avaliação empregou
+\texttt{StratifiedGroupKFold} com cinco folds, usando a imagem-fonte como grupo
+e preservando, tanto quanto possível, a proporção das classes em cada divisão.
+Em cada fold, todas as células de uma mesma imagem permanecem juntas: ou no
+conjunto de treino do fold, ou no conjunto de avaliação do fold. Essa decisão
+reduz vazamento por correlação visual entre recortes da mesma imagem.
+As divisões foram geradas com semente fixa (42) e reutilizadas para o modelo
+principal e para o comparador, garantindo que diferenças observadas não fossem
+causadas por sorteios distintos dos folds. A comparação é, portanto, pareada no
+nível do fold.
+
+A ConvNeXt-Tiny foi o modelo principal do estudo. Para comparação complementar,
+uma ResNet-50 foi treinada e avaliada nos mesmos folds. Dentro do conjunto de
+treino de cada fold, um \texttt{GroupShuffleSplit} separou uma validação interna
+agrupada por imagem, usada somente para selecionar o melhor checkpoint pela AUC
+ROC. O conjunto de avaliação do fold não participou dessa seleção. As predições
+foram avaliadas no limiar 0,50 e sem \emph{test-time augmentation}. A
+Figura~\ref{fig:pipeline} resume o fluxo experimental.
+
+\begin{figure}[ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=0.35cm,
+  etapa/.style={
+    draw,
+    rounded corners=2pt,
+    align=center,
+    font=\scriptsize,
+    minimum height=0.70cm,
+    text width=1.70cm,
+    inner sep=2pt
+  },
+  seta/.style={-{Latex[length=1.4mm]},thick}
+]
+\node[etapa] (img) {Imagem\\CRIC};
+\node[etapa,right=of img] (crop) {Recortes\\$224\times224$};
+\node[etapa,right=of crop] (fold) {5 folds\\por imagem};
+\node[etapa,right=of fold] (train) {Ajuste fino\\por fold};
+\node[etapa,right=of train] (models) {ConvNeXt\\ResNet};
+\node[etapa,right=of models] (eval) {Avaliação\\do fold};
+\node[etapa,right=of eval] (cmp) {Comparação\\pareada};
+\draw[seta] (img) -- (crop);
+\draw[seta] (crop) -- (fold);
+\draw[seta] (fold) -- (train);
+\draw[seta] (train) -- (models);
+\draw[seta] (models) -- (eval);
+\draw[seta] (eval) -- (cmp);
+\end{tikzpicture}
+}
+\caption{Fluxo do protocolo: a ConvNeXt-Tiny é avaliada em validação cruzada
+agrupada por imagem, e a ResNet-50 é usada como comparador complementar nos
+mesmos folds.}
+\label{fig:pipeline}
+\end{figure}
+
+\subsection{Modelos e treinamento}
+
+A arquitetura proposta foi ConvNeXt-Tiny \cite{liu2022convnext}, pré-treinada
+na ImageNet \cite{deng2009imagenet} e com a cabeça substituída por uma camada
+linear de duas saídas. A ResNet-50 \cite{he2016resnet} recebeu a mesma adaptação
+e foi usada apenas como referência arquitetural. O ajuste fino utilizou AdamW
+\cite{loshchilov2019adamw}, taxa inicial $3\times10^{-4}$, decaimento
+$10^{-4}$, \emph{label smoothing} 0,03, lote 48 e agendador cossenoidal. No
+treino, foram aplicados recorte redimensionado aleatório, espelhamento
+horizontal, rotação de até 10 graus e pequenas variações de cor; na avaliação,
+apenas redimensionamento e normalização pelas estatísticas da ImageNet.
+
+Os folds da ConvNeXt-Tiny haviam sido ajustados inicialmente com teto de 12
+épocas. A análise dos históricos mostrou que o melhor checkpoint por AUC de
+validação ocorreu nas épocas 1, 3, 3, 4 e 6, conforme o fold. Portanto, a
+ResNet-50 foi ajustada com teto de 6 épocas e parada antecipada de paciência 2,
+mantendo o mesmo critério de seleção. Essa decisão reduz custo computacional e
+permanece dentro da janela efetiva em que a ConvNeXt-Tiny atingiu seus melhores
+checkpoints; assim, a comparação prioriza o desempenho no mesmo particionamento,
+e não o custo de treinamento das arquiteturas.
+
+Todos os artefatos foram preservados por fold: definição das imagens em cada
+divisão, histórico de treinamento, checkpoint selecionado e métricas do conjunto
+de avaliação. O treinamento foi executado em GPU NVIDIA RTX 3060; a
+ConvNeXt-Tiny e a ResNet-50 possuem cerca de 28 e 25 milhões de parâmetros,
+respectivamente. Esse registro favorece reprodutibilidade e segue recomendações de
+relato para estudos de modelos preditivos aplicados à saúde
+\cite{collins2024tripod,tejani2024claim}.
+
+\subsection{Métricas}
+
+Foram calculadas AUC ROC, AUC precisão--revocação (AUC PR), sensibilidade,
+especificidade, acurácia balanceada, \emph{F1} da classe anormal, coeficiente de
+correlação de Matthews (MCC), kappa de Cohen e \emph{Brier score}. Todas as
+métricas foram calculadas separadamente no conjunto de avaliação de cada fold e
+resumidas como média e desvio-padrão.

@@ -1,5 +1,5 @@
 param(
-    [ValidateSet("check", "status", "prepare", "train", "eval", "cv", "baseline", "all", "package", "materials", "benchmark", "gpu", "clean-cache")]
+    [ValidateSet("check", "status", "prepare", "cv", "cv-convnext", "cv-resnet50", "compare-cv", "all", "package", "materials", "benchmark", "gpu", "clean-cache")]
     [string]$Step = "check",
     [switch]$Force,
     [string]$Config = "configs/local_3060.json",

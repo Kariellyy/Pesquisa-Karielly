@@ -7,6 +7,9 @@ env/
 cric_cervix/
 outputs_binary/
 outputs_binary_copy.zip
+*.rar
+*.zip
+*.7z
 *.pt
 *.pth
 *.ckpt
@@ -41,6 +44,7 @@ __pycache__/
 CRIC_CLASSIFICACAO_EXECUTADO.ipynb
 archive/notebooks/*.ipynb
 archive/logs/*.log
+archive
 
 # Sistema, IDE e credenciais
 .DS_Store
@@ -51,3 +55,5 @@ Thumbs.db
 .env.*
 *.pem
 *.key
+
+tmp
